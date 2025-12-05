@@ -36,6 +36,6 @@ git commit -m "%msg%"
 git push
 
 echo.
-echo ✔ Commit ve Push BASARIYLA TAMAMLANDI.
+echo [SUCCESS] Commit ve Push BASARIYLA TAMAMLANDI.
 echo ===============================
 pause
