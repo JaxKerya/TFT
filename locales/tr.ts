@@ -8,19 +8,19 @@ export const tr = {
   // Navigation
   nav: {
     brand: 'TFT Rehberi',
-    subtitle: 'Item Üretme',
+    subtitle: 'Item Üretme Şeysi',
     allItems: 'Tüm Itemler',
     baseItems: 'Temel Itemler',
   },
 
   // Home Page
   home: {
-    title: 'TFT Item Rehberi',
-    subtitle: 'Item üretme bilgileriyle stratejinizde ustalaşın',
+    title: 'TFT Itemlerini Öğreniyoruz',
+    subtitle: 'WUUUUUHUUHUHUUHUHUHUUUUUUUUUUU',
     searchPlaceholder: 'İsim, etki veya role göre arayın...',
-    itemsFound: (count: number) => `${count} item bulundu`,
+    itemsFound: (count: number) => `${count} şey bulundu`,
     resetFilters: 'Filtreleri sıfırla',
-    noItemsFound: 'Item bulunamadı',
+    noItemsFound: 'Hiçbir şey bulunamadı',
     noItemsHint: 'Aramayı veya filtreleri değiştirmeyi deneyin',
   },
 
@@ -53,10 +53,10 @@ export const tr = {
   // Base Items Page
   baseItems: {
     title: 'Temel Itemler',
-    subtitle: 'Güçlü itemler yapmak için temel bileşenler',
+    subtitle: 'Güçlü şeyler yapmak için temel bileşenler',
     available: (count: number) => `${count} temel item mevcut`,
-    notFound: 'Temel item bulunamadı',
-    notFoundHint: 'Temel item verisi henüz eklenmedi',
+    notFound: 'Temel şey bulunamadı',
+    notFoundHint: 'Temel şey verisi henüz eklenmedi',
   },
 
   // Item Detail Page
@@ -77,7 +77,7 @@ export const tr = {
 
   // Footer
   footer: {
-    builtWith: 'Next.js • TypeScript • Tailwind CSS ile geliştirildi',
+    builtWith: '🍭 L 🍭 O 🍭 L 🍭 İ 🍭 P 🍭 O 🍭 P 🍭',
   },
 } as const;
 
