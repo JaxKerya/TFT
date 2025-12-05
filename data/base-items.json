@@ -1,0 +1,152 @@
+{
+    "items": [
+      {
+        "id": "bf-sword",
+        "name": "B.F. Sword",
+        "type": "base",
+        "roles": [
+          "AD"
+        ],
+        "description": "Saldırı gücü verir",
+        "summary": "Saldırı gücü",
+        "buildsInto": [
+          "deathblade",
+          "infinity-edge",
+          "bloodthirster"
+        ],
+        "image": "/images/items/baseitems/BFSword.png"
+      },
+      {
+        "id": "recurve-bow",
+        "name": "Recurve Bow",
+        "type": "base",
+        "roles": [
+          "AD",
+          "AP",
+          "Nişancı"
+        ],
+        "description": "Saldırı hızı verir",
+        "summary": "Saldırı hızı",
+        "buildsInto": [
+          "guinsoos-rageblade",
+          "statikk-shiv"
+        ],
+        "image": "/images/items/baseitems/RecurveBow.png"
+      },
+      {
+        "id": "needlessly-large-rod",
+        "name": "Needlessly Large Rod",
+        "type": "base",
+        "roles": [
+          "AP"
+        ],
+        "description": "Yetenek gücü verir",
+        "summary": "Yetenek gücü",
+        "buildsInto": [
+          "rabadons-deathcap",
+          "archangels-staff"
+        ],
+        "image": "/images/items/baseitems/NeedlesslyLargeRod.png"
+      },
+      {
+        "id": "tear-of-the-goddess",
+        "name": "Tear of the Goddess",
+        "type": "base",
+        "roles": [
+          "AP",
+          "Tank"
+        ],
+        "description": "Mana verir",
+        "summary": "Mana",
+        "buildsInto": [
+          "blue-buff",
+          "spear-of-shojin"
+        ],
+        "image": "/images/items/baseitems/TearoftheGoddess.png"
+      },
+      {
+        "id": "chain-vest",
+        "name": "Chain Vest",
+        "type": "base",
+        "roles": [
+          "Tank"
+        ],
+        "description": "Zırh verir",
+        "summary": "Zırh",
+        "buildsInto": [
+          "bramble-vest",
+          "sunfire-cape"
+        ],
+        "image": "/images/items/baseitems/ChainVest.png"
+      },
+      {
+        "id": "negatron-cloak",
+        "name": "Negatron Cloak",
+        "type": "base",
+        "roles": [
+          "Tank"
+        ],
+        "description": "Büyü direnci verir",
+        "summary": "Büyü direnci",
+        "buildsInto": [
+          "dragons-claw",
+          "ionic-spark"
+        ],
+        "image": "/images/items/baseitems/NegatronCloak.png"
+      },
+      {
+        "id": "giants-belt",
+        "name": "Giant's Belt",
+        "type": "base",
+        "roles": [
+          "Tank"
+        ],
+        "description": "Can verir",
+        "summary": "Can",
+        "buildsInto": [
+          "warmogs-armor",
+          "gargoyle-stoneplate"
+        ],
+        "image": "/images/items/baseitems/GiantsBelt.png"
+      },
+      {
+        "id": "sparring-gloves",
+        "name": "Sparring Gloves",
+        "type": "base",
+        "roles": [
+          "AD",
+          "AP",
+          "Nişancı",
+          "Yakın Dövüşçü"
+        ],
+        "description": "Kritik vuruş şansı verir",
+        "summary": "Kritik",
+        "buildsInto": [
+          "jeweled-gauntlet",
+          "infinity-edge"
+        ],
+        "image": "/images/items/baseitems/SparringGloves.png"
+      },
+      {
+        "id": "spatula",
+        "name": "Spatula",
+        "type": "base",
+        "roles": [
+          "AD",
+          "AP",
+          "Tank",
+          "Nişancı",
+          "~Yakın Dövüşçü",
+          "Yakın Dövüşçü"
+        ],
+        "description": "Özel kombinasyonlar için kullanılır",
+        "summary": "Özel kombinasyonlar",
+        "buildsInto": [
+          "tacticians-crown",
+          "tacticians-cape",
+          "tacticians-shield"
+        ],
+        "image": "/images/items/baseitems/Spatula.png"
+      }
+    ]
+  }

@@ -1,0 +1,644 @@
+{
+  "items": [
+    {
+      "id": "adaptive-helm",
+      "name": "Adaptive Helm",
+      "type": "full",
+      "roles": [
+        "AD",
+        "AP",
+        "Tank"
+      ],
+      "description": "Herkes: %15 mana + Tank: 35 zırh ve büyü direnci / AP+AD: %15 saldırı gücü ve yetenek gücü",
+      "summary": "Role göre mana, direnç veya hasar verir",
+      "craftsFrom": [
+        "tear-of-the-goddess",
+        "negatron-cloak"
+      ],
+      "image": "/images/items/fullitems/Adaptive Helm.jpg"
+    },
+    {
+      "id": "archangels-staff",
+      "name": "Archangel's Staff",
+      "type": "full",
+      "roles": [
+        "AP",
+        "Nişancı",
+        "~Yakın Dövüşçü"
+      ],
+      "description": "Çatışma başlangıcından itibaren kullanan kişi her 5 saniyede %20 AP kazanır",
+      "summary": "Zamanla yetenek gücü artar",
+      "craftsFrom": [
+        "needlessly-large-rod",
+        "tear-of-the-goddess"
+      ],
+      "image": "/images/items/fullitems/ArchangelsStaff.png"
+    },
+    {
+      "id": "bloodthirster",
+      "name": "Bloodthirster",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Eğer canı %40'ın altına düşerse %25 kalkan kazanır ama tek seferliğine",
+      "summary": "Düşük canda kalkan verir",
+      "craftsFrom": [
+        "bf-sword",
+        "negatron-cloak"
+      ],
+      "image": "/images/items/fullitems/Bloodthirster.png"
+    },
+    {
+      "id": "blue-buff",
+      "name": "Blue Buff",
+      "type": "full",
+      "roles": [
+        "AP",
+        "Nişancı"
+      ],
+      "description": "%10 daha fazla saldırı gücü ve AP",
+      "summary": "Ekstra hasar ve yetenek gücü",
+      "craftsFrom": [
+        "tear-of-the-goddess",
+        "needlessly-large-rod"
+      ],
+      "image": "/images/items/fullitems/BlueBuff.png"
+    },
+    {
+      "id": "bramble-vest",
+      "name": "Bramble Vest",
+      "type": "full",
+      "roles": [
+        "Tank"
+      ],
+      "description": "%7 can kazanır ve %8 az hasar alır",
+      "summary": "Hasar azaltma ve can",
+      "craftsFrom": [
+        "chain-vest",
+        "chain-vest"
+      ],
+      "image": "/images/items/fullitems/BrambleVest.png"
+    },
+    {
+      "id": "crownguard",
+      "name": "Crownguard",
+      "type": "full",
+      "roles": [
+        "Tank",
+        "AP"
+      ],
+      "description": "Round başı canının %25'i kalkana dönüşür. Bir süre sonra kalkan da AP'ye dönüşür",
+      "summary": "Kalkan ve sonrasında AP verir",
+      "craftsFrom": [
+        "chain-vest",
+        "needlessly-large-rod"
+      ],
+      "image": "/images/items/fullitems/Crownguard.jpg"
+    },
+    {
+      "id": "deathblade",
+      "name": "Deathblade",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "AD artışı",
+      "summary": "Yüksek saldırı gücü",
+      "craftsFrom": [
+        "bf-sword",
+        "bf-sword"
+      ],
+      "image": "/images/items/fullitems/Deathblade.png"
+    },
+    {
+      "id": "dragons-claw",
+      "name": "Dragon's Claw",
+      "type": "full",
+      "roles": [
+        "Tank"
+      ],
+      "description": "%9 can kazan ve 2 saniyede canının %2.5'ini yenile",
+      "summary": "Can yenileme ve büyü direnci",
+      "craftsFrom": [
+        "negatron-cloak",
+        "negatron-cloak"
+      ],
+      "image": "/images/items/fullitems/DragonsClaw.png"
+    },
+    {
+      "id": "edge-of-night",
+      "name": "Edge of Night",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Yakın Dövüşçü"
+      ],
+      "description": "%60 cana düştüğünde hedef alınamaz hale gelirsin",
+      "summary": "Düşük canda görünmezlik",
+      "craftsFrom": [
+        "bf-sword",
+        "chain-vest"
+      ],
+      "image": "/images/items/fullitems/EdgeofNight.png"
+    },
+    {
+      "id": "evenshroud",
+      "name": "Evenshroud",
+      "type": "full",
+      "roles": [
+        "Tank"
+      ],
+      "description": "Rakipleri savunmasız hale getirip büyü direnci ve zırh kazanır",
+      "summary": "Zırh kırma ve dayanıklılık",
+      "craftsFrom": [
+        "chain-vest",
+        "negatron-cloak"
+      ],
+      "image": "/images/items/fullitems/Evenshroud.jpg"
+    },
+    {
+      "id": "gargoyle-stoneplate",
+      "name": "Gargoyle Stoneplate",
+      "type": "full",
+      "roles": [
+        "Tank"
+      ],
+      "description": "10'ar zırh ve büyü direnci",
+      "summary": "Ekstra zırh ve büyü direnci",
+      "craftsFrom": [
+        "chain-vest",
+        "negatron-cloak"
+      ],
+      "image": "/images/items/fullitems/Gargoyle Stoneplate.jpg"
+    },
+    {
+      "id": "giant-slayer",
+      "name": "Giant Slayer",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "Atak hızı artırır, stacklenir",
+      "summary": "Canı yüksek rakiplere hasar",
+      "craftsFrom": [
+        "bf-sword",
+        "recurve-bow"
+      ],
+      "image": "/images/items/fullitems/Giant Slayer.jpg"
+    },
+    {
+      "id": "guinsoos-rageblade",
+      "name": "Guinsoo's Rageblade",
+      "type": "full",
+      "roles": [
+        "AD",
+        "AP",
+        "Nişancı",
+        "~Yakın Dövüşçü"
+      ],
+      "description": "Her saniye %7 saldırı hızı kazan",
+      "summary": "Sınırsız saldırı hızı biriktirme",
+      "craftsFrom": [
+        "recurve-bow",
+        "needlessly-large-rod"
+      ],
+      "image": "/images/items/fullitems/GuinsoosRageblade.png"
+    },
+    {
+      "id": "hand-of-justice",
+      "name": "Hand Of Justice",
+      "type": "full",
+      "roles": [
+        "AD",
+        "AP",
+        "Nişancı",
+        "Yakın Dövüşçü"
+      ],
+      "description": "%15 AD ve AP, %12 omnivamp",
+      "summary": "Hem hasar hem iyileşme",
+      "craftsFrom": [
+        "bf-sword",
+        "tear-of-the-goddess"
+      ],
+      "image": "/images/items/fullitems/HandofJustice.png"
+    },
+    {
+      "id": "hextech-gunblade",
+      "name": "Hextech Gunblade",
+      "type": "full",
+      "roles": [
+        "AP",
+        "Nişancı",
+        "~Yakın Dövüşçü"
+      ],
+      "description": "Vurduğun hasarın %20 miktarı kadar canı en düşük takım arkadaşını heallar",
+      "summary": "Takım arkadaşını iyileştirir",
+      "craftsFrom": [
+        "bf-sword",
+        "needlessly-large-rod"
+      ],
+      "image": "/images/items/fullitems/HextechGunblade.png"
+    },
+    {
+      "id": "infinity-edge",
+      "name": "Infinity Edge",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "Kritik vuruş",
+      "summary": "Güçlü kritik hasar",
+      "craftsFrom": [
+        "bf-sword",
+        "sparring-gloves"
+      ],
+      "image": "/images/items/fullitems/InfinityEdge.png"
+    },
+    {
+      "id": "ionic-spark",
+      "name": "Ionic Spark",
+      "type": "full",
+      "roles": [
+        "Tank",
+        "AP"
+      ],
+      "description": "Rakibin büyü direncini azaltır",
+      "summary": "Büyü direnci kırma ve hasar",
+      "craftsFrom": [
+        "needlessly-large-rod",
+        "negatron-cloak"
+      ],
+      "image": "/images/items/fullitems/IonicSpark.png"
+    },
+    {
+      "id": "jeweled-gauntlet",
+      "name": "Jeweled Gauntlet",
+      "type": "full",
+      "roles": [
+        "AP",
+        "Nişancı"
+      ],
+      "description": "Kritik vuruş",
+      "summary": "Yeteneklerin kritik vurmasını sağlar",
+      "craftsFrom": [
+        "needlessly-large-rod",
+        "sparring-gloves"
+      ],
+      "image": "/images/items/fullitems/JeweledGauntlet.png"
+    },
+    {
+      "id": "krakens-fury",
+      "name": "Kraken's Fury",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "Stacklenen AD artışı. 15 stack olunca saldırı hızı kazan",
+      "summary": "Biriken saldırı gücü",
+      "craftsFrom": [
+        "negatron-cloak",
+        "recurve-bow"
+      ],
+      "image": "/images/items/fullitems/Kraken's Fury.jpg"
+    },
+    {
+      "id": "last-whisper",
+      "name": "Last Whisper",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "Verilen hasarın %30'u kadar rakibin büyü direncini düşürür",
+      "summary": "Direnç kırma",
+      "craftsFrom": [
+        "bf-sword",
+        "sparring-gloves"
+      ],
+      "image": "/images/items/fullitems/LastWhisper.png"
+    },
+    {
+      "id": "morellonomicon",
+      "name": "Morellonomicon",
+      "type": "full",
+      "roles": [
+        "AP",
+        "Nişancı",
+        "~Yakın Dövüşçü"
+      ],
+      "description": "AP yakma",
+      "summary": "Zamanla hasar ve iyileştirme azaltma",
+      "craftsFrom": [
+        "needlessly-large-rod",
+        "giants-belt"
+      ],
+      "image": "/images/items/fullitems/Morellonomicon.png"
+    },
+    {
+      "id": "nashors-tooth",
+      "name": "Nashor's Tooth",
+      "type": "full",
+      "roles": [
+        "AP",
+        "Nişancı",
+        "~Yakın Dövüşçü"
+      ],
+      "description": "+2 mana, kritik vurursa da +4 mana",
+      "summary": "Saldırı hızı ve mana",
+      "craftsFrom": [
+        "needlessly-large-rod",
+        "recurve-bow"
+      ],
+      "image": "/images/items/fullitems/Nashor's Tooth.jpg"
+    },
+    {
+      "id": "protectors-vow",
+      "name": "Protector's Vow",
+      "type": "full",
+      "roles": [
+        "Tank"
+      ],
+      "description": "Mana, zırh ve max can artar",
+      "summary": "Başlangıç manası ve kalkan",
+      "craftsFrom": [
+        "tear-of-the-goddess",
+        "chain-vest"
+      ],
+      "image": "/images/items/fullitems/Protector's Vow.png"
+    },
+    {
+      "id": "quicksilver",
+      "name": "Quicksilver",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Kitle kontrolü kazanır ve can yeniler",
+      "summary": "Kitle kontrol bağışıklığı",
+      "craftsFrom": [
+        "negatron-cloak",
+        "sparring-gloves"
+      ],
+      "image": "/images/items/fullitems/Quicksilver.png"
+    },
+    {
+      "id": "rabadons-deathcap",
+      "name": "Rabadon's Deathcap",
+      "type": "full",
+      "roles": [
+        "AP",
+        "Nişancı"
+      ],
+      "description": "AP artışı",
+      "summary": "Çok yüksek yetenek gücü",
+      "craftsFrom": [
+        "needlessly-large-rod",
+        "needlessly-large-rod"
+      ],
+      "image": "/images/items/fullitems/Rabadon's Deathcap.jpg"
+    },
+    {
+      "id": "red-buff",
+      "name": "Red Buff",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "AD yakma",
+      "summary": "Hasar artışı ve yakma",
+      "craftsFrom": [
+        "bf-sword",
+        "chain-vest"
+      ],
+      "image": "/images/items/fullitems/RedBuff.png"
+    },
+    {
+      "id": "spear-of-shojin",
+      "name": "Spear of Shojin",
+      "type": "full",
+      "roles": [
+        "AD",
+        "AP",
+        "Nişancı",
+        "~Yakın Dövüşçü"
+      ],
+      "description": "Daha hızlı mana doldurur",
+      "summary": "Saldırılarda ekstra mana",
+      "craftsFrom": [
+        "tear-of-the-goddess",
+        "bf-sword"
+      ],
+      "image": "/images/items/fullitems/Shojin.png"
+    },
+    {
+      "id": "spirit-visage",
+      "name": "Spirit Visage",
+      "type": "full",
+      "roles": [
+        "Tank"
+      ],
+      "description": "Can yenileme",
+      "summary": "Artırılmış iyileştirme",
+      "craftsFrom": [
+        "negatron-cloak",
+        "giants-belt"
+      ],
+      "image": "/images/items/fullitems/SpiritVisage.png"
+    },
+    {
+      "id": "steadfast-heart",
+      "name": "Steadfast Heart",
+      "type": "full",
+      "roles": [
+        "Tank"
+      ],
+      "description": "Dayanıklılık kazanır",
+      "summary": "Hasar azaltma",
+      "craftsFrom": [
+        "chain-vest",
+        "giants-belt"
+      ],
+      "image": "/images/items/fullitems/SteadfastHeart.png"
+    },
+    {
+      "id": "steraks-gage",
+      "name": "Sterak's Gage",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Canı %60 değerine düştüğünde %50 kalkan kazanır. Kalkan 5 saniye içinde hızla azalarak kaybolur.",
+      "summary": "Patlama hasarına karşı kalkan",
+      "craftsFrom": [
+        "bf-sword",
+        "giants-belt"
+      ],
+      "image": "/images/items/fullitems/SteraksGage.png"
+    },
+    {
+      "id": "strikers-flail",
+      "name": "Striker's Flail",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "Stackli kritik",
+      "summary": "Kritik vuruş odaklı",
+      "craftsFrom": [
+        "giants-belt",
+        "sparring-gloves"
+      ],
+      "image": "/images/items/fullitems/StrikersFlail.png"
+    },
+    {
+      "id": "sunfire-cape",
+      "name": "Sunfire Cape",
+      "type": "full",
+      "roles": [
+        "Tank"
+      ],
+      "description": "Tanklar için yakma",
+      "summary": "Yakındaki rakipleri yakar",
+      "craftsFrom": [
+        "chain-vest",
+        "giants-belt"
+      ],
+      "image": "/images/items/fullitems/SunfireCape.png"
+    },
+    {
+      "id": "tacticians-cape",
+      "name": "Tactician's Cape",
+      "type": "full",
+      "roles": [
+        "AD",
+        "AP",
+        "Tank",
+        "Nişancı",
+        "Yakın Dövüşçü"
+      ],
+      "description": "+1 team size",
+      "summary": "Takım boyutunu artırır",
+      "craftsFrom": [
+        "spatula",
+        "giants-belt"
+      ],
+      "image": "/images/items/fullitems/TacticiansCape.png"
+    },
+    {
+      "id": "tacticians-crown",
+      "name": "Tactician's Crown",
+      "type": "full",
+      "roles": [
+        "AD",
+        "AP",
+        "Tank",
+        "Nişancı",
+        "Yakın Dövüşçü"
+      ],
+      "description": "+1 team size",
+      "summary": "Takım boyutunu artırır",
+      "craftsFrom": [
+        "spatula",
+        "spatula"
+      ],
+      "image": "/images/items/fullitems/TacticiansCrown.png"
+    },
+    {
+      "id": "tacticians-shield",
+      "name": "Tactician's Shield",
+      "type": "full",
+      "roles": [
+        "AD",
+        "AP",
+        "Tank",
+        "Nişancı",
+        "Yakın Dövüşçü"
+      ],
+      "description": "+1 team size",
+      "summary": "Takım boyutunu artırır",
+      "craftsFrom": [
+        "spatula",
+        "chain-vest"
+      ],
+      "image": "/images/items/fullitems/TacticiansShield.png"
+    },
+    {
+      "id": "thiefs-gloves",
+      "name": "Thief's Gloves",
+      "type": "full",
+      "roles": [
+        "AD",
+        "AP",
+        "Tank",
+        "Nişancı",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Random 2 eşya verir",
+      "summary": "Rastgele eşyalar sağlar",
+      "craftsFrom": [
+        "sparring-gloves",
+        "sparring-gloves"
+      ],
+      "image": "/images/items/fullitems/ThiefsGloves.png"
+    },
+    {
+      "id": "titans-resolve",
+      "name": "Titan's Resolve",
+      "type": "full",
+      "roles": [
+        "AD",
+        "Yakın Dövüşçü",
+        "Tank"
+      ],
+      "description": "Tanklık ve saldırı hızı verir",
+      "summary": "Hasar aldıkça güçlenir",
+      "craftsFrom": [
+        "bf-sword",
+        "chain-vest"
+      ],
+      "image": "/images/items/fullitems/Titan's Resolve.jpg"
+    },
+    {
+      "id": "void-staff",
+      "name": "Void Staff",
+      "type": "full",
+      "roles": [
+        "AP",
+        "Nişancı",
+        "~Yakın Dövüşçü"
+      ],
+      "description": "Tankların aldığı büyü direncini kırar",
+      "summary": "Büyü nüfuzu",
+      "craftsFrom": [
+        "needlessly-large-rod",
+        "sparring-gloves"
+      ],
+      "image": "/images/items/fullitems/Void Staff.jpg"
+    },
+    {
+      "id": "warmogs-armor",
+      "name": "Warmog's Armor",
+      "type": "full",
+      "roles": [
+        "Tank"
+      ],
+      "description": "%12 max can",
+      "summary": "Yüksek can değeri",
+      "craftsFrom": [
+        "giants-belt",
+        "giants-belt"
+      ],
+      "image": "/images/items/fullitems/WarmogsArmor.png"
+    }
+  ]
+}

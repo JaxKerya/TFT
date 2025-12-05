@@ -1,0 +1,426 @@
+{
+  "items": [
+    {
+      "id": "blighting-jewel",
+      "name": "Blighting Jewel",
+      "type": "artifact",
+      "roles": [
+        "AP",
+        "Nişancı"
+      ],
+      "description": "Her bir büyü hasarı rakibin büyü direncini 4 azaltır eğer rakibin büyü direnci 0 sa çara 3 mana verir",
+      "summary": "Büyü direnci kırar ve mana verir",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/blighting-jewel1.png"
+    },
+    {
+      "id": "dawncore",
+      "name": "Dawncore",
+      "type": "artifact",
+      "roles": [
+        "AP",
+        "Nişancı",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Ateş ettikçe gereken mana sayısı azalır",
+      "summary": "Mana bedeli azalır",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/dawncore.png"
+    },
+    {
+      "id": "deathfire-grasp",
+      "name": "Deathfire Grasp",
+      "type": "artifact",
+      "roles": [
+        "AP",
+        "Nişancı"
+      ],
+      "description": "Rakibin maks canının %40'ı kadar büyü hasarıyla patlatır",
+      "summary": "Yüksek ani hasar",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/deathfire-grasp.png"
+    },
+    {
+      "id": "deaths-defiance",
+      "name": "Death's Defiance",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Eşyaya sahip birime uygulanan hasarın %50'si geri yansıtılır",
+      "summary": "Hasar yansıtma ve dayanıklılık",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/deaths-defiance.png"
+    },
+    {
+      "id": "fishbones",
+      "name": "Fishbones",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "Random düşmanlara ateş eder",
+      "summary": "Rastgele hedeflere saldırı",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/fishbones1.png"
+    },
+    {
+      "id": "flickerblades",
+      "name": "Flickerblades",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "AP",
+        "Nişancı"
+      ],
+      "description": "Stacklenen saldırı hızı, AD ve AP",
+      "summary": "Saldırı hızı odaklı güçlenme",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/flickerblade.png"
+    },
+    {
+      "id": "gamblers-blade",
+      "name": "Gambler's Blade",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "Bankadaki her gold için (max 30 gold) %1 ekstra saldırı hızı kazandırır ve her saldırının %5 gold düşürme ihtimali vardır",
+      "summary": "Altın kazandırır ve saldırı hızı verir",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/gamblers-blade2.png"
+    },
+    {
+      "id": "gold-collector",
+      "name": "Gold Collector",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "Eğer rakibin canı %12 canın altındaysa direkt infaz eder ve %33 şansla her kill 1 gold düşürür",
+      "summary": "İnfaz ve altın",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/gold-collector.png"
+    },
+    {
+      "id": "horizon-focus",
+      "name": "Horizon Focus",
+      "type": "artifact",
+      "roles": [
+        "AP",
+        "Tank"
+      ],
+      "description": "Stunladığı düşmana düşmanın kendi canının %30 kadar büyü hasarı verir",
+      "summary": "Kitle kontrol sonrası hasar",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/horizon-focus1.png"
+    },
+    {
+      "id": "hullcrusher",
+      "name": "Hullcrusher",
+      "type": "artifact",
+      "roles": [
+        "Tank",
+        "AD",
+        "AP"
+      ],
+      "description": "Yanında dizili çar yoksa 600 can ve %20 AD AP kazanır",
+      "summary": "Yalnızken güçlenir",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/hullcrusher.png"
+    },
+    {
+      "id": "infinity-force",
+      "name": "Infinity Force",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "AP",
+        "Tank",
+        "Nişancı",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Her şeyden birazcıkcıkcıkcık",
+      "summary": "Tüm istatistikleri artırır",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/infinity-force.png"
+    },
+    {
+      "id": "innervating-locket",
+      "name": "Innervating Locket",
+      "type": "artifact",
+      "roles": [
+        "Tank"
+      ],
+      "description": "Her aldığı hasarda %1 mana kazanır ve canını doldurur",
+      "summary": "Hasar aldıkça mana ve can",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/innervating-locket1.png"
+    },
+    {
+      "id": "lich-bane",
+      "name": "Lich Bane",
+      "type": "artifact",
+      "roles": [
+        "AP",
+        "Nişancı",
+        "~Yakın Dövüşçü"
+      ],
+      "description": "Her yetenek kullanımından sonraki ilk saldırısında rounda bağlı olarak ek AP hasarı verir",
+      "summary": "Yetenek sonrası güçlendirilmiş saldırı",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/lich-bane1.png"
+    },
+    {
+      "id": "lightshield-crest",
+      "name": "Lightshield Crest",
+      "type": "artifact",
+      "roles": [
+        "Tank"
+      ],
+      "description": "Canı en düşük takım arkadaşına kendi kalkanından verir",
+      "summary": "Takım arkadaşını korur",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/lightshield-crest1.png"
+    },
+    {
+      "id": "manazane",
+      "name": "Manazane",
+      "type": "artifact",
+      "roles": [
+        "AP",
+        "Nişancı",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Manayı hızlı doldurur",
+      "summary": "Hızlı mana yenileme",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/manazane.png"
+    },
+    {
+      "id": "mittens",
+      "name": "Mittens",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Equipleyen çarı küçültür ve hızını artırır. Chille karşı dayanıklılık kazanır",
+      "summary": "Hız ve dayanıklılık",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/mittens1.png"
+    },
+    {
+      "id": "moguls-mail",
+      "name": "Mogul's Mail",
+      "type": "artifact",
+      "roles": [
+        "Tank"
+      ],
+      "description": "Hasar aldıkça kalkan ve can verir",
+      "summary": "Hasar aldıkça güçlenen savunma",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/moguls-mail2.png"
+    },
+    {
+      "id": "prowlers-claw",
+      "name": "Prowler's Claw",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "Yakın Dövüşçü"
+      ],
+      "description": "4 hex içindeki en yakın çara dash at ve %60 krit kazan",
+      "summary": "Rakibe atılma ve kritik",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/prowler's-claw1.png"
+    },
+    {
+      "id": "rapid-firecannon",
+      "name": "Rapid Firecannon",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "+1 range kazanır ve her kill aldığında range +1 daha artar",
+      "summary": "Menzil artışı",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/rapid-firecannon1.png"
+    },
+    {
+      "id": "seekers-armguard",
+      "name": "Seeker's Armguard",
+      "type": "artifact",
+      "roles": [
+        "AP",
+        "AD",
+        "Nişancı",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Rakipten bir çar ölünce kalkan ve AP artırır",
+      "summary": "Rakip öldükçe güçlenir",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/seeker's-armguard1.png"
+    },
+    {
+      "id": "silvermere-dawn",
+      "name": "Silvermere Dawn",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "Yakın Dövüşçü",
+        "Tank"
+      ],
+      "description": "Üstüne atladığı rakibi stunlar fakat item verilen çarın maks saldırı hızı 0.5'e sabitlenir",
+      "summary": "Kitle kontrol ve sabit hız",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/silvermere-dawn1.png"
+    },
+    {
+      "id": "snipers-focus",
+      "name": "Sniper's Focus",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "Nişancı"
+      ],
+      "description": "1 attack range kazan, rakiple arasındaki her hex için %9 hasar amp kazan",
+      "summary": "Uzak mesafe hasar artışı",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/snipers_focus.png"
+    },
+    {
+      "id": "spectral-cutlass",
+      "name": "Spectral Cutlass",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Holderin aynasal yansımasındaki hexe ışınlar 8sn sonra başladığı yere geri döner",
+      "summary": "Rakip arkasına ışınlanma",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/spectral-cutlass1.png"
+    },
+    {
+      "id": "statikk-shiv",
+      "name": "Statikk Shiv",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "AP",
+        "Nişancı",
+        "~Yakın Dövüşçü"
+      ],
+      "description": "3. atak 40+4Ω ekstra büyü hasarı verir",
+      "summary": "Zincirleme büyü hasarı",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/statikk-shiv.png"
+    },
+    {
+      "id": "talisman-of-ascension",
+      "name": "Talisman Of Ascension",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "AP",
+        "Tank"
+      ],
+      "description": "Savaşın 22. saniyesinde 2 katı can ve hasar artışı alır",
+      "summary": "Uzun savaşlarda güç patlaması",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/talisman-of-ascension1.png"
+    },
+    {
+      "id": "the-indomitable",
+      "name": "The Indomitable",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "AP",
+        "Yakın Dövüşçü",
+        "Tank"
+      ],
+      "description": "Yavaşlar fakat %10 max health kazanır, stunlanmaz ve rakibi yanına çeker",
+      "summary": "Kitle kontrol bağışıklığı",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/indomitable-gauntlet.png"
+    },
+    {
+      "id": "titanic-hydra",
+      "name": "Titanic Hydra",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "Yakın Dövüşçü",
+        "Tank"
+      ],
+      "description": "Saldırılar itema sahip kişinin %3 canı ve %8 AD hasarı olarak rakibe hasar atıyor",
+      "summary": "Can oranlı alan hasarı",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/titanic-hydra.png"
+    },
+    {
+      "id": "tricksters-glass",
+      "name": "Trickster's Glass",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "AP",
+        "Tank",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Clone yaratır. Cloneun %70 canı olur ve %10 mana verir",
+      "summary": "Klon oluşturur",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/tricksters-glass.png"
+    },
+    {
+      "id": "unending-despair",
+      "name": "Unending Despair",
+      "type": "artifact",
+      "roles": [
+        "AP",
+        "Tank"
+      ],
+      "description": "Çarın üstündeki kalkan kırılırsa onun %150'si karşıya AP hasarı verir",
+      "summary": "Kalkan patlaması hasar verir",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/unending-despair1.png"
+    },
+    {
+      "id": "wits-end",
+      "name": "Wit's End",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "AP",
+        "Nişancı",
+        "Yakın Dövüşçü"
+      ],
+      "description": "Bonus büyü hasarı, uygulanan büyü hasarının %35'i can olarak geri gelir",
+      "summary": "Büyü hasarı ve iyileşme",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/wits-end1.png"
+    },
+    {
+      "id": "zhonyas-paradox",
+      "name": "Zhonya's Paradox",
+      "type": "artifact",
+      "roles": [
+        "AP",
+        "Nişancı",
+        "Yakın Dövüşçü"
+      ],
+      "description": "%40 canın altına düşünce görünmez oluyor",
+      "summary": "Kısa süreli hasar almamazlık",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/zhonyas-paradox.png"
+    }
+  ]
+}
