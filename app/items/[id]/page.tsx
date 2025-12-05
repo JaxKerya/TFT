@@ -9,8 +9,13 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ItemDetailPage({ params }: { params: { id: string } }) {
-  const item = getItemById(params.id);
+export default async function ItemDetailPage({ 
+  params 
+}: { 
+  params: Promise<{ id: string }> 
+}) {
+  const { id } = await params;
+  const item = getItemById(id);
 
   if (!item) {
     notFound();
