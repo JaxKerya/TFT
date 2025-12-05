@@ -1,21 +1,30 @@
 @echo off
+chcp 65001 >nul
+
 echo ===============================
-echo   GIT OTOMATIK COMMIT & PUSH
+echo  GIT OTOMATIK COMMIT & PUSH
 echo ===============================
 echo.
 
-:: 1) Remote baglantisini kontrol et
-git remote -v >nul 2>&1
+:: Repo kontrolü
+git rev-parse --is-inside-work-tree >nul 2>&1
 if %errorlevel% neq 0 (
     echo Bu klasor bir git reposu degil.
     pause
     exit /b
 )
 
-:: 2) Otomatik pull (conflict yoksa temizce ceker)
-echo Son degisiklikler cekiliyor...
-git pull --rebase
+:: Unstaged degisiklikleri kontrol et
+git diff --quiet
+if %errorlevel% neq 0 (
+    echo Degisiklikler var. Commit icin hazirlaniyor...
+) else (
+    echo Degisiklik yok. Cikis yapiliyor.
+    pause
+    exit /b
+)
 
+:: Commit mesaji al
 echo.
 set /p msg="Commit mesaji: "
 
@@ -25,13 +34,13 @@ if "%msg%"=="" (
     exit /b
 )
 
-:: 3) Degisiklikleri ekle
+:: Add
 git add .
 
-:: 4) Commit'i olustur
+:: Commit
 git commit -m "%msg%"
 
-:: 5) Github'a yukle
+:: Push
 git push
 
 echo.
