@@ -72,7 +72,6 @@
       "type": "artifact",
       "roles": [
         "AD",
-        "AP",
         "Nişancı"
       ],
       "description": "Stacklenen saldırı hızı, AD ve AP",
@@ -124,9 +123,9 @@
       "name": "Hullcrusher",
       "type": "artifact",
       "roles": [
-        "Tank",
         "AD",
-        "AP"
+        "AP",
+        "Tank"
       ],
       "description": "Yanında dizili çar yoksa 600 can ve %20 AD AP kazanır",
       "summary": "Yalnızken güçlenir",
@@ -154,6 +153,8 @@
       "name": "Innervating Locket",
       "type": "artifact",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "Her aldığı hasarda %1 mana kazanır ve canını doldurur",
@@ -167,8 +168,7 @@
       "type": "artifact",
       "roles": [
         "AP",
-        "Nişancı",
-        "~Yakın Dövüşçü"
+        "Nişancı"
       ],
       "description": "Her yetenek kullanımından sonraki ilk saldırısında rounda bağlı olarak ek AP hasarı verir",
       "summary": "Yetenek sonrası güçlendirilmiş saldırı",
@@ -180,6 +180,8 @@
       "name": "Lightshield Crest",
       "type": "artifact",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "Canı en düşük takım arkadaşına kendi kalkanından verir",
@@ -193,6 +195,7 @@
       "type": "artifact",
       "roles": [
         "AP",
+        "Tank",
         "Nişancı",
         "Yakın Dövüşçü"
       ],
@@ -207,6 +210,7 @@
       "type": "artifact",
       "roles": [
         "AD",
+        "AP",
         "Yakın Dövüşçü"
       ],
       "description": "Equipleyen çarı küçültür ve hızını artırır. Chille karşı dayanıklılık kazanır",
@@ -219,6 +223,8 @@
       "name": "Mogul's Mail",
       "type": "artifact",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "Hasar aldıkça kalkan ve can verir",
@@ -257,8 +263,8 @@
       "name": "Seeker's Armguard",
       "type": "artifact",
       "roles": [
-        "AP",
         "AD",
+        "Tank",
         "Nişancı",
         "Yakın Dövüşçü"
       ],
@@ -313,11 +319,9 @@
       "type": "artifact",
       "roles": [
         "AD",
-        "AP",
-        "Nişancı",
-        "~Yakın Dövüşçü"
+        "Nişancı"
       ],
-      "description": "3. atak 40+4Ω ekstra büyü hasarı verir",
+      "description": "3. atak 40+40% ekstra büyü hasarı verir",
       "summary": "Zincirleme büyü hasarı",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/statikk-shiv.png"
@@ -357,8 +361,7 @@
       "type": "artifact",
       "roles": [
         "AD",
-        "Yakın Dövüşçü",
-        "Tank"
+        "Yakın Dövüşçü"
       ],
       "description": "Saldırılar itema sahip kişinin %3 canı ve %8 AD hasarı olarak rakibe hasar atıyor",
       "summary": "Can oranlı alan hasarı",
@@ -398,7 +401,6 @@
       "name": "Wit's End",
       "type": "artifact",
       "roles": [
-        "AD",
         "AP",
         "Nişancı",
         "Yakın Dövüşçü"
@@ -413,6 +415,7 @@
       "name": "Zhonya's Paradox",
       "type": "artifact",
       "roles": [
+        "AD",
         "AP",
         "Nişancı",
         "Yakın Dövüşçü"

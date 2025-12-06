@@ -7,7 +7,9 @@
       "roles": [
         "AD",
         "AP",
-        "Tank"
+        "Tank",
+        "Nişancı",
+        "Yakın Dövüşçü"
       ],
       "description": "Herkes: %15 mana + Tank: 35 zırh ve büyü direnci / AP+AD: %15 saldırı gücü ve yetenek gücü",
       "summary": "Role göre mana, direnç veya hasar verir",
@@ -71,6 +73,8 @@
       "name": "Bramble Vest",
       "type": "full",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "%7 can kazanır ve %8 az hasar alır",
@@ -86,8 +90,9 @@
       "name": "Crownguard",
       "type": "full",
       "roles": [
-        "Tank",
-        "AP"
+        "AD",
+        "AP",
+        "Tank"
       ],
       "description": "Round başı canının %25'i kalkana dönüşür. Bir süre sonra kalkan da AP'ye dönüşür",
       "summary": "Kalkan ve sonrasında AP verir",
@@ -118,6 +123,8 @@
       "name": "Dragon's Claw",
       "type": "full",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "%9 can kazan ve 2 saniyede canının %2.5'ini yenile",
@@ -149,6 +156,8 @@
       "name": "Evenshroud",
       "type": "full",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "Rakipleri savunmasız hale getirip büyü direnci ve zırh kazanır",
@@ -164,6 +173,8 @@
       "name": "Gargoyle Stoneplate",
       "type": "full",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "10'ar zırh ve büyü direnci",
@@ -180,7 +191,8 @@
       "type": "full",
       "roles": [
         "AD",
-        "Nişancı"
+        "Nişancı",
+        "~Yakın Dövüşçü"
       ],
       "description": "Atak hızı artırır, stacklenir",
       "summary": "Canı yüksek rakiplere hasar",
@@ -196,9 +208,7 @@
       "type": "full",
       "roles": [
         "AD",
-        "AP",
-        "Nişancı",
-        "~Yakın Dövüşçü"
+        "Nişancı"
       ],
       "description": "Her saniye %7 saldırı hızı kazan",
       "summary": "Sınırsız saldırı hızı biriktirme",
@@ -215,7 +225,6 @@
       "roles": [
         "AD",
         "AP",
-        "Nişancı",
         "Yakın Dövüşçü"
       ],
       "description": "%15 AD ve AP, %12 omnivamp",
@@ -232,8 +241,7 @@
       "type": "full",
       "roles": [
         "AP",
-        "Nişancı",
-        "~Yakın Dövüşçü"
+        "Nişancı"
       ],
       "description": "Vurduğun hasarın %20 miktarı kadar canı en düşük takım arkadaşını heallar",
       "summary": "Takım arkadaşını iyileştirir",
@@ -264,8 +272,9 @@
       "name": "Ionic Spark",
       "type": "full",
       "roles": [
-        "Tank",
-        "AP"
+        "AD",
+        "AP",
+        "Tank"
       ],
       "description": "Rakibin büyü direncini azaltır",
       "summary": "Büyü direnci kırma ve hasar",
@@ -281,7 +290,8 @@
       "type": "full",
       "roles": [
         "AP",
-        "Nişancı"
+        "Nişancı",
+        "~Yakın Dövüşçü"
       ],
       "description": "Kritik vuruş",
       "summary": "Yeteneklerin kritik vurmasını sağlar",
@@ -362,6 +372,8 @@
       "name": "Protector's Vow",
       "type": "full",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "Mana, zırh ve max can artar",
@@ -394,7 +406,8 @@
       "type": "full",
       "roles": [
         "AP",
-        "Nişancı"
+        "Nişancı",
+        "~Yakın Dövüşçü"
       ],
       "description": "AP artışı",
       "summary": "Çok yüksek yetenek gücü",
@@ -425,10 +438,8 @@
       "name": "Spear of Shojin",
       "type": "full",
       "roles": [
-        "AD",
         "AP",
-        "Nişancı",
-        "~Yakın Dövüşçü"
+        "Nişancı"
       ],
       "description": "Daha hızlı mana doldurur",
       "summary": "Saldırılarda ekstra mana",
@@ -443,6 +454,8 @@
       "name": "Spirit Visage",
       "type": "full",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "Can yenileme",
@@ -458,6 +471,8 @@
       "name": "Steadfast Heart",
       "type": "full",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "Dayanıklılık kazanır",
@@ -505,6 +520,8 @@
       "name": "Sunfire Cape",
       "type": "full",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "Tanklar için yakma",
@@ -597,8 +614,7 @@
       "type": "full",
       "roles": [
         "AD",
-        "Yakın Dövüşçü",
-        "Tank"
+        "Yakın Dövüşçü"
       ],
       "description": "Tanklık ve saldırı hızı verir",
       "summary": "Hasar aldıkça güçlenir",
@@ -614,8 +630,7 @@
       "type": "full",
       "roles": [
         "AP",
-        "Nişancı",
-        "~Yakın Dövüşçü"
+        "Nişancı"
       ],
       "description": "Tankların aldığı büyü direncini kırar",
       "summary": "Büyü nüfuzu",
@@ -630,6 +645,8 @@
       "name": "Warmog's Armor",
       "type": "full",
       "roles": [
+        "AD",
+        "AP",
         "Tank"
       ],
       "description": "%12 max can",
