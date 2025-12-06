@@ -8,6 +8,8 @@ export type ItemRole =
   | '~Yakın Dövüşçü'
   | 'Yakın Dövüşçü';
 
+export type SortOption = 'name-asc' | 'name-desc' | 'roles-desc' | 'default';
+
 export interface Item {
   id: string;
   name: string;

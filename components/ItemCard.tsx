@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Item } from '@/types/item';
 import { getItemById } from '@/lib/items';
+import { Sparkles, Hexagon, Box } from 'lucide-react';
+import FavoriteButton from './FavoriteButton';
 
 interface ItemCardProps {
   item: Item;
@@ -11,16 +13,59 @@ interface ItemCardProps {
 }
 
 export default function ItemCard({ item, onClick }: ItemCardProps) {
+  const getTypeBadge = () => {
+    switch (item.type) {
+      case 'full':
+        return { 
+          Icon: Hexagon, 
+          color: 'bg-blue-500/20 text-blue-300 border-blue-400/30',
+          label: 'Tam Item'
+        };
+      case 'artifact':
+        return { 
+          Icon: Sparkles, 
+          color: 'bg-purple-500/20 text-purple-300 border-purple-400/30',
+          label: 'Artifact Item'
+        };
+      case 'base':
+        return { 
+          Icon: Box, 
+          color: 'bg-amber-500/20 text-amber-300 border-amber-400/30',
+          label: 'Temel Item'
+        };
+      default:
+        return { Icon: Box, color: '', label: '' };
+    }
+  };
+
+  const typeBadge = getTypeBadge();
+
   return (
     <motion.div
       onClick={onClick}
-      className="group relative bg-zinc-900/40 backdrop-blur-sm border border-zinc-800/50 rounded-xl p-4 cursor-pointer overflow-hidden transition-all duration-300 hover:bg-zinc-800/40 hover:border-accent/50 hover:shadow-glow-sm"
+      className="group relative bg-zinc-900/40 backdrop-blur-sm border border-zinc-800/50 rounded-xl p-4 cursor-pointer overflow-hidden transition-all duration-300 hover:bg-zinc-800/40 hover:border-accent/50 hover:shadow-glow-sm min-h-[280px] flex flex-col"
       whileHover={{ y: -4 }}
       whileTap={{ scale: 0.98 }}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.2 }}
     >
+      {/* Type Badge & Favorite Button */}
+      <div className="absolute top-2 left-0 right-0 z-20 flex items-start justify-between px-2">
+        {/* Favorite Button */}
+        <FavoriteButton itemId={item.id} size="sm" />
+        
+        {/* Type Badge */}
+        <div className={`group/badge p-1.5 rounded-full border backdrop-blur-sm ${typeBadge.color}`}>
+          <typeBadge.Icon className="w-3 h-3" strokeWidth={2.5} />
+          
+          {/* Tooltip */}
+          <span className="absolute top-full right-0 mt-2 px-2 py-1 bg-zinc-900/95 backdrop-blur-sm border border-zinc-700/50 rounded text-[10px] font-medium text-neutral-200 whitespace-nowrap opacity-0 group-hover/badge:opacity-100 pointer-events-none transition-opacity duration-200 shadow-lg">
+            {typeBadge.label}
+          </span>
+        </div>
+      </div>
+
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/0 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
@@ -48,11 +93,11 @@ export default function ItemCard({ item, onClick }: ItemCardProps) {
         </h3>
 
         {/* Role Tags */}
-        <div className="flex flex-wrap gap-1 justify-center">
-          {item.roles.slice(0, 2).map(role => (
+        <div className="flex flex-wrap gap-1 justify-center items-start min-h-[40px] content-start">
+          {item.roles.map(role => (
             <span
               key={role}
-              className="px-2 py-0.5 text-[10px] font-medium bg-accent/10 text-accent-light rounded border border-accent/20"
+              className="px-2 py-0.5 text-[10px] font-medium bg-accent/10 text-accent-light rounded border border-accent/20 h-fit"
             >
               {role}
             </span>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ItemCard from '@/components/ItemCard';
 import SearchBar from '@/components/SearchBar';
@@ -8,8 +8,9 @@ import Filters from '@/components/Filters';
 import ItemModal from '@/components/ItemModal';
 import { getAllItems, filterItems, searchItems } from '@/lib/items';
 import { Item, ItemType, ItemRole } from '@/types/item';
-import { Package } from 'lucide-react';
+import { Package, Lollipop } from 'lucide-react';
 import { locale } from '@/locales';
+import { useFavorites } from '@/lib/favorites';
 
 export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -17,6 +18,9 @@ export default function HomePage() {
   const [selectedRoles, setSelectedRoles] = useState<ItemRole[]>([]);
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const { favorites } = useFavorites();
 
   const handleRoleToggle = (role: ItemRole) => {
     setSelectedRoles(prev =>
@@ -42,8 +46,29 @@ export default function HomePage() {
     // Apply filters
     items = filterItems(items, selectedType, selectedRoles);
 
+    // Apply favorites filter
+    if (showOnlyFavorites) {
+      items = items.filter(item => favorites.includes(item.id));
+    }
+
     return items;
-  }, [searchQuery, selectedType, selectedRoles]);
+  }, [searchQuery, selectedType, selectedRoles, showOnlyFavorites, favorites]);
+
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      // Modal açıksa veya input zaten focus'taysa çık
+      if (isModalOpen || document.activeElement === searchInputRef.current) return;
+      
+      if (e.key === '/') {
+        e.preventDefault();
+        searchInputRef.current?.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyPress);
+    return () => document.removeEventListener('keydown', handleKeyPress);
+  }, [isModalOpen]);
 
   return (
     <div className="space-y-6">
@@ -64,6 +89,7 @@ export default function HomePage() {
       {/* Search & Filters */}
       <div className="flex flex-col items-center gap-4">
         <SearchBar
+          ref={searchInputRef}
           value={searchQuery}
           onChange={setSearchQuery}
           placeholder={locale.home.searchPlaceholder}
@@ -75,6 +101,26 @@ export default function HomePage() {
           selectedRoles={selectedRoles}
           onRoleToggle={handleRoleToggle}
         />
+        
+        {/* Favorites Toggle */}
+        <motion.button
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          onClick={() => setShowOnlyFavorites(!showOnlyFavorites)}
+          className={`px-4 py-2 rounded-lg text-xs font-medium transition-all duration-200 flex items-center gap-2 ${
+            showOnlyFavorites
+              ? 'bg-pink-500/20 text-pink-300 border border-pink-400/30 shadow-glow-sm'
+              : 'bg-zinc-900/40 text-neutral-400 border border-zinc-800/50 hover:border-pink-400/30 hover:text-pink-400'
+          }`}
+        >
+          <Lollipop className={`w-3.5 h-3.5 ${showOnlyFavorites ? 'fill-current' : ''}`} />
+          {locale.filters.showFavorites}
+          {favorites.length > 0 && (
+            <span className="ml-1 px-1.5 py-0.5 bg-zinc-800/50 rounded text-[10px]">
+              {favorites.length}
+            </span>
+          )}
+        </motion.button>
       </div>
 
       {/* Results Count */}
@@ -86,12 +132,13 @@ export default function HomePage() {
         <span className="text-neutral-500">
           {locale.home.itemsFound(filteredItems.length)}
         </span>
-        {(searchQuery || selectedType !== 'all' || selectedRoles.length > 0) && (
+{(searchQuery || selectedType !== 'all' || selectedRoles.length > 0 || showOnlyFavorites) && (
           <button
             onClick={() => {
               setSearchQuery('');
               setSelectedType('all');
               setSelectedRoles([]);
+              setShowOnlyFavorites(false);
             }}
             className="text-neutral-500 hover:text-accent transition-colors"
           >

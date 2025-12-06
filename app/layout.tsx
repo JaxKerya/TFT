@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
-import { Layers, Package } from 'lucide-react';
+import { Layers, Package, Lollipop } from 'lucide-react';
 import { locale } from '@/locales';
+import { FavoritesProvider } from '@/lib/favorites';
 
 const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <body className={inter.className}>
+        <FavoritesProvider>
         <div className="min-h-screen flex flex-col">
           {/* Header */}
           <header className="sticky top-0 z-30 w-full border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-lg">
@@ -53,6 +55,13 @@ export default function RootLayout({
                     <Package className="w-3.5 h-3.5" />
                     {locale.nav.baseItems}
                   </Link>
+                  <Link
+                    href="/favorites"
+                    className="text-xs font-medium text-neutral-400 hover:text-neutral-200 transition-colors duration-200 flex items-center gap-1.5"
+                  >
+                    <Lollipop className="w-3.5 h-3.5" />
+                    {locale.nav.favorites}
+                  </Link>
                 </div>
               </nav>
             </div>
@@ -72,6 +81,7 @@ export default function RootLayout({
             </div>
           </footer>
         </div>
+        </FavoritesProvider>
       </body>
     </html>
   );

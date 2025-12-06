@@ -11,6 +11,7 @@ export const tr = {
     subtitle: 'Item Üretme Şeysi',
     allItems: 'Tüm Itemler',
     baseItems: 'Temel Itemler',
+    favorites: 'Favoriler',
   },
 
   // Home Page
@@ -33,6 +34,7 @@ export const tr = {
     typeFull: 'Tam',
     typeBase: 'Temel',
     typeArtifact: 'Artifact',
+    showFavorites: 'Sadece Favoriler',
   },
 
   // Item Types
@@ -73,6 +75,17 @@ export const tr = {
     title: 'Item Bulunamadı',
     description: 'Aradığınız item mevcut değil veya henüz veritabanına eklenmedi.',
     backHome: 'Ana Sayfaya Dön',
+  },
+
+  // Favorites
+  favorites: {
+    title: 'Favori Itemlerim',
+    subtitle: 'Favorilere eklediğiniz itemler burada görünür',
+    empty: 'Henüz favori eklemediniz',
+    emptyHint: 'Item kartlarındaki lolipop ikonuna tıklayarak favorilere ekleyebilirsiniz',
+    addToFavorites: 'Favorilere ekle',
+    removeFromFavorites: 'Favorilerden çıkar',
+    count: (count: number) => `${count} favori item`,
   },
 
   // Footer

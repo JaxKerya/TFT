@@ -1,5 +1,6 @@
 'use client';
 
+import { forwardRef } from 'react';
 import { Search, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { locale } from '@/locales';
@@ -10,7 +11,8 @@ interface SearchBarProps {
   placeholder?: string;
 }
 
-export default function SearchBar({ value, onChange, placeholder = locale.home.searchPlaceholder }: SearchBarProps) {
+const SearchBar = forwardRef<HTMLInputElement, SearchBarProps>(
+  ({ value, onChange, placeholder = locale.home.searchPlaceholder }, ref) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: -10 }}
@@ -20,6 +22,7 @@ export default function SearchBar({ value, onChange, placeholder = locale.home.s
       <div className="relative group">
         <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-500 group-focus-within:text-accent transition-colors" />
         <input
+            ref={ref}
           type="text"
           value={value}
           onChange={(e) => onChange(e.target.value)}
@@ -38,3 +41,8 @@ export default function SearchBar({ value, onChange, placeholder = locale.home.s
     </motion.div>
   );
 }
+);
+
+SearchBar.displayName = 'SearchBar';
+
+export default SearchBar;
