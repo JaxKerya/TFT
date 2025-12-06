@@ -8,7 +8,7 @@ import Filters from '@/components/Filters';
 import ItemModal from '@/components/ItemModal';
 import { getAllItems, filterItems, searchItems } from '@/lib/items';
 import { Item, ItemType, ItemRole } from '@/types/item';
-import { Package, Lollipop } from 'lucide-react';
+import { Package } from 'lucide-react';
 import { locale } from '@/locales';
 import { useFavorites } from '@/lib/favorites';
 
@@ -100,27 +100,10 @@ export default function HomePage() {
           onTypeChange={setSelectedType}
           selectedRoles={selectedRoles}
           onRoleToggle={handleRoleToggle}
+          showOnlyFavorites={showOnlyFavorites}
+          onToggleFavorites={() => setShowOnlyFavorites(!showOnlyFavorites)}
+          favoritesCount={favorites.length}
         />
-        
-        {/* Favorites Toggle */}
-        <motion.button
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          onClick={() => setShowOnlyFavorites(!showOnlyFavorites)}
-          className={`px-4 py-2 rounded-lg text-xs font-medium transition-all duration-200 flex items-center gap-2 ${
-            showOnlyFavorites
-              ? 'bg-pink-500/20 text-pink-300 border border-pink-400/30 shadow-glow-sm'
-              : 'bg-zinc-900/40 text-neutral-400 border border-zinc-800/50 hover:border-pink-400/30 hover:text-pink-400'
-          }`}
-        >
-          <Lollipop className={`w-3.5 h-3.5 ${showOnlyFavorites ? 'fill-current' : ''}`} />
-          {locale.filters.showFavorites}
-          {favorites.length > 0 && (
-            <span className="ml-1 px-1.5 py-0.5 bg-zinc-800/50 rounded text-[10px]">
-              {favorites.length}
-            </span>
-          )}
-        </motion.button>
       </div>
 
       {/* Results Count */}
@@ -155,15 +138,10 @@ export default function HomePage() {
           transition={{ delay: 0.1 }}
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-3"
         >
-          {filteredItems.map((item, index) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.02, duration: 0.2 }}
-            >
+          {filteredItems.map(item => (
+            <div key={item.id} className="transform-gpu will-change-transform">
               <ItemCard item={item} onClick={() => handleItemClick(item)} />
-            </motion.div>
+            </div>
           ))}
         </motion.div>
       ) : (

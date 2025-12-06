@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Item } from '@/types/item';
 import { getItemById } from '@/lib/items';
-import { Sparkles, Hexagon, Box } from 'lucide-react';
+import { Sparkles, Hexagon, Box, Ban } from 'lucide-react';
 import FavoriteButton from './FavoriteButton';
 
 interface ItemCardProps {
@@ -43,7 +43,7 @@ export default function ItemCard({ item, onClick }: ItemCardProps) {
   return (
     <motion.div
       onClick={onClick}
-      className="group relative bg-zinc-900/40 backdrop-blur-sm border border-zinc-800/50 rounded-xl p-4 cursor-pointer overflow-hidden transition-all duration-300 hover:bg-zinc-800/40 hover:border-accent/50 hover:shadow-glow-sm min-h-[280px] flex flex-col"
+      className="group relative bg-zinc-900/70 border border-zinc-800/60 rounded-xl p-4 cursor-pointer overflow-hidden transition-all duration-300 hover:bg-zinc-800/70 hover:border-accent/50 hover:shadow-glow-sm min-h-[280px] flex flex-col transform-gpu will-change-transform"
       whileHover={{ y: -4 }}
       whileTap={{ scale: 0.98 }}
       initial={{ opacity: 0, y: 20 }}
@@ -93,7 +93,7 @@ export default function ItemCard({ item, onClick }: ItemCardProps) {
         </h3>
 
         {/* Role Tags */}
-        <div className="flex flex-wrap gap-1 justify-center items-start min-h-[40px] content-start">
+        <div className="flex flex-wrap gap-1 justify-center items-start h-[48px] content-start overflow-hidden">
           {item.roles.map(role => (
             <span
               key={role}
@@ -133,6 +133,16 @@ export default function ItemCard({ item, onClick }: ItemCardProps) {
             </div>
           );
         })()}
+
+        {/* Non-Craftable Badge for Base & Artifact Items */}
+        {(item.type === 'base' || item.type === 'artifact') && (
+          <div className="flex items-center justify-center gap-1.5 pt-2 mt-1 border-t border-zinc-800/50 w-full">
+            <Ban className="w-3 h-3 text-neutral-600" strokeWidth={2} />
+            <span className="text-[9px] text-neutral-600 font-medium uppercase tracking-wide">
+              Craftlanamaz
+            </span>
+          </div>
+        )}
       </div>
     </motion.div>
   );

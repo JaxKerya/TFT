@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
-import { Layers, Package, Lollipop } from 'lucide-react';
+import { Layers, Package } from 'lucide-react';
 import { locale } from '@/locales';
 import { FavoritesProvider } from '@/lib/favorites';
 
@@ -54,13 +54,6 @@ export default function RootLayout({
                   >
                     <Package className="w-3.5 h-3.5" />
                     {locale.nav.baseItems}
-                  </Link>
-                  <Link
-                    href="/favorites"
-                    className="text-xs font-medium text-neutral-400 hover:text-neutral-200 transition-colors duration-200 flex items-center gap-1.5"
-                  >
-                    <Lollipop className="w-3.5 h-3.5" />
-                    {locale.nav.favorites}
                   </Link>
                 </div>
               </nav>

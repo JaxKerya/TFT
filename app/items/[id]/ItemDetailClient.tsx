@@ -65,7 +65,7 @@ export default function ItemDetailClient({ item }: ItemDetailClientProps) {
             </h1>
 
             {/* Type Badge */}
-            <div className="inline-block px-3 py-1 bg-accent/10 border border-accent/30 rounded-lg">
+            <div className="inline-flex items-center px-3 py-1.5 bg-accent/10 border border-accent/30 rounded-lg">
               <span className="text-xs font-semibold text-accent uppercase tracking-wide">
                 {getItemTypeLabel(item.type)}
               </span>

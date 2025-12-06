@@ -2,7 +2,7 @@
 
 import { ItemType, ItemRole } from '@/types/item';
 import { motion } from 'framer-motion';
-import { Sparkles, Shield, Zap, X } from 'lucide-react';
+import { Sparkles, Shield, Zap, X, Lollipop } from 'lucide-react';
 import { locale } from '@/locales';
 
 interface FiltersProps {
@@ -10,6 +10,9 @@ interface FiltersProps {
   onTypeChange: (type: ItemType | 'all') => void;
   selectedRoles: ItemRole[];
   onRoleToggle: (role: ItemRole) => void;
+  showOnlyFavorites?: boolean;
+  onToggleFavorites?: () => void;
+  favoritesCount?: number;
 }
 
 const itemTypes: { value: ItemType | 'all'; label: string; icon: any }[] = [
@@ -33,6 +36,9 @@ export default function Filters({
   onTypeChange,
   selectedRoles,
   onRoleToggle,
+  showOnlyFavorites = false,
+  onToggleFavorites,
+  favoritesCount = 0,
 }: FiltersProps) {
   return (
     <motion.div
@@ -64,9 +70,9 @@ export default function Filters({
         </div>
       </div>
 
-      {/* Role Filter */}
+      {/* Role Filter & Favorites */}
       <div className="space-y-2">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2">
           <h3 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider">
             {locale.filters.roles}
           </h3>
@@ -80,20 +86,43 @@ export default function Filters({
             </button>
           )}
         </div>
-        <div className="flex flex-wrap gap-1.5">
-          {availableRoles.map(role => (
+        <div className="flex items-start gap-3">
+          {/* Role Buttons */}
+          <div className="flex flex-wrap gap-1.5 flex-1">
+            {availableRoles.map(role => (
+              <button
+                key={role}
+                onClick={() => onRoleToggle(role)}
+                className={`px-2.5 py-1 rounded-md text-[11px] font-medium transition-all duration-200 ${
+                  selectedRoles.includes(role)
+                    ? 'bg-accent/20 text-accent border border-accent/50'
+                    : 'bg-zinc-900/40 text-neutral-500 border border-zinc-800/50 hover:border-zinc-700 hover:text-neutral-400'
+                }`}
+              >
+                {role}
+              </button>
+            ))}
+          </div>
+          
+          {/* Favorites Toggle */}
+          {onToggleFavorites && (
             <button
-              key={role}
-              onClick={() => onRoleToggle(role)}
-              className={`px-2.5 py-1 rounded-md text-[11px] font-medium transition-all duration-200 ${
-                selectedRoles.includes(role)
-                  ? 'bg-accent/20 text-accent border border-accent/50'
-                  : 'bg-zinc-900/40 text-neutral-500 border border-zinc-800/50 hover:border-zinc-700 hover:text-neutral-400'
+              onClick={onToggleFavorites}
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap ${
+                showOnlyFavorites
+                  ? 'bg-pink-500/20 text-pink-300 border border-pink-400/30'
+                  : 'bg-zinc-900/40 text-neutral-400 border border-zinc-800/50 hover:border-pink-400/30 hover:text-pink-400'
               }`}
             >
-              {role}
+              <Lollipop className={`w-3 h-3 ${showOnlyFavorites ? 'fill-current' : ''}`} />
+              {locale.filters.showFavorites}
+              {favoritesCount > 0 && (
+                <span className="ml-0.5 px-1.5 py-0.5 bg-zinc-800/50 rounded text-[10px]">
+                  {favoritesCount}
+                </span>
+              )}
             </button>
-          ))}
+          )}
         </div>
       </div>
     </motion.div>
