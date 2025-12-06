@@ -62,7 +62,7 @@
       "summary": "Ekstra hasar ve yetenek gücü",
       "craftsFrom": [
         "tear-of-the-goddess",
-        "needlessly-large-rod"
+        "tear-of-the-goddess"
       ],
       "image": "/images/items/fullitems/BlueBuff.png"
     },
@@ -154,7 +154,7 @@
       "description": "Rakipleri savunmasız hale getirip büyü direnci ve zırh kazanır",
       "summary": "Zırh kırma ve dayanıklılık",
       "craftsFrom": [
-        "chain-vest",
+        "giants-belt",
         "negatron-cloak"
       ],
       "image": "/images/items/fullitems/Evenshroud.jpg"
@@ -221,7 +221,7 @@
       "description": "%15 AD ve AP, %12 omnivamp",
       "summary": "Hem hasar hem iyileşme",
       "craftsFrom": [
-        "bf-sword",
+        "sparring-gloves",
         "tear-of-the-goddess"
       ],
       "image": "/images/items/fullitems/HandofJustice.png"
@@ -318,7 +318,7 @@
       "description": "Verilen hasarın %30'u kadar rakibin büyü direncini düşürür",
       "summary": "Direnç kırma",
       "craftsFrom": [
-        "bf-sword",
+        "recurve-bow",
         "sparring-gloves"
       ],
       "image": "/images/items/fullitems/LastWhisper.png"
@@ -352,7 +352,7 @@
       "description": "+2 mana, kritik vurursa da +4 mana",
       "summary": "Saldırı hızı ve mana",
       "craftsFrom": [
-        "needlessly-large-rod",
+        "giants-belt",
         "recurve-bow"
       ],
       "image": "/images/items/fullitems/Nashor's Tooth.jpg"
@@ -415,8 +415,8 @@
       "description": "AD yakma",
       "summary": "Hasar artışı ve yakma",
       "craftsFrom": [
-        "bf-sword",
-        "chain-vest"
+        "recurve-bow",
+        "recurve-bow"
       ],
       "image": "/images/items/fullitems/RedBuff.png"
     },
@@ -448,7 +448,7 @@
       "description": "Can yenileme",
       "summary": "Artırılmış iyileştirme",
       "craftsFrom": [
-        "negatron-cloak",
+        "tear-of-the-goddess",
         "giants-belt"
       ],
       "image": "/images/items/fullitems/SpiritVisage.png"
@@ -464,7 +464,7 @@
       "summary": "Hasar azaltma",
       "craftsFrom": [
         "chain-vest",
-        "giants-belt"
+        "sparring-gloves"
       ],
       "image": "/images/items/fullitems/SteadfastHeart.png"
     },
@@ -530,7 +530,7 @@
       "summary": "Takım boyutunu artırır",
       "craftsFrom": [
         "spatula",
-        "giants-belt"
+        "frying-pan"
       ],
       "image": "/images/items/fullitems/TacticiansCape.png"
     },
@@ -567,8 +567,8 @@
       "description": "+1 team size",
       "summary": "Takım boyutunu artırır",
       "craftsFrom": [
-        "spatula",
-        "chain-vest"
+        "frying-pan",
+        "frying-pan"
       ],
       "image": "/images/items/fullitems/TacticiansShield.png"
     },
@@ -603,7 +603,7 @@
       "description": "Tanklık ve saldırı hızı verir",
       "summary": "Hasar aldıkça güçlenir",
       "craftsFrom": [
-        "bf-sword",
+        "recurve-bow",
         "chain-vest"
       ],
       "image": "/images/items/fullitems/Titan's Resolve.jpg"
@@ -620,8 +620,8 @@
       "description": "Tankların aldığı büyü direncini kırar",
       "summary": "Büyü nüfuzu",
       "craftsFrom": [
-        "needlessly-large-rod",
-        "sparring-gloves"
+        "recurve-bow",
+        "tear-of-the-goddess"
       ],
       "image": "/images/items/fullitems/Void Staff.jpg"
     },
