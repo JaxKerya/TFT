@@ -3,14 +3,16 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { tr } from '@/locales/tr';
 import { en } from '@/locales/en';
-import type { Locale } from '@/locales/tr';
 
 type Language = 'tr' | 'en';
+
+// Use a more flexible type that works with both locales
+type LocaleType = typeof tr | typeof en;
 
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  locale: Locale;
+  locale: LocaleType;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -18,7 +20,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const locales = {
   tr,
   en,
-};
+} as const;
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   // Always start with 'tr' to avoid hydration mismatch
