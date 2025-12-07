@@ -39,8 +39,8 @@ export default function Filters({
   const itemTypes: { value: ItemType | 'all'; label: string; icon: any }[] = [
     { value: 'all', label: locale.filters.typeAll, icon: Sparkles },
     { value: 'full', label: locale.filters.typeFull, icon: Zap },
-    { value: 'base', label: locale.filters.typeBase, icon: Shield },
     { value: 'artifact', label: locale.filters.typeArtifact, icon: Sparkles },
+    { value: 'base', label: locale.filters.typeBase, icon: Shield },
   ];
   return (
     <motion.div
