@@ -100,6 +100,4 @@ export const en = {
   footer: {
     builtWith: '🍭 L 🍭 O 🍭 L 🍭 I 🍭 P 🍭 O 🍭 P 🍭',
   },
-} as const;
-
-export type Locale = typeof en;
+};
