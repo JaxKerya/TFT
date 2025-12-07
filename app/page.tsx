@@ -9,10 +9,11 @@ import ItemModal from '@/components/ItemModal';
 import { getAllItems, filterItems, searchItems } from '@/lib/items';
 import { Item, ItemType, ItemRole } from '@/types/item';
 import { Package } from 'lucide-react';
-import { locale } from '@/locales';
+import { useLanguage } from '@/lib/language-context';
 import { useFavorites } from '@/lib/favorites';
 
 export default function HomePage() {
+  const { locale } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState<ItemType | 'all'>('all');
   const [selectedRoles, setSelectedRoles] = useState<ItemRole[]>([]);

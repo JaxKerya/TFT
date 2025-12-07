@@ -12,6 +12,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Herkes: %15 mana + Tank: 35 zırh ve büyü direnci / AP+AD: %15 saldırı gücü ve yetenek gücü",
+      "description_en": "All: +15% mana + Tank: 35 armor and magic resist / AP+AD: +15% attack damage and ability power",
       "summary": "Role göre mana, direnç veya hasar verir",
       "craftsFrom": [
         "tear-of-the-goddess",
@@ -29,6 +30,7 @@
         "~Yakın Dövüşçü"
       ],
       "description": "Çatışma başlangıcından itibaren kullanan kişi her 5 saniyede %20 AP kazanır",
+      "description_en": "User gains +20% AP every 5 seconds from combat start",
       "summary": "Zamanla yetenek gücü artar",
       "craftsFrom": [
         "needlessly-large-rod",
@@ -45,6 +47,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Eğer canı %40'ın altına düşerse %25 kalkan kazanır ama tek seferliğine",
+      "description_en": "If health drops below 40%, gains a 25% shield once per combat",
       "summary": "Düşük canda kalkan verir",
       "craftsFrom": [
         "bf-sword",
@@ -61,6 +64,7 @@
         "Nişancı"
       ],
       "description": "%10 daha fazla saldırı gücü ve AP",
+      "description_en": "+10% more attack damage and AP",
       "summary": "Ekstra hasar ve yetenek gücü",
       "craftsFrom": [
         "tear-of-the-goddess",
@@ -78,6 +82,7 @@
         "Tank"
       ],
       "description": "%7 can kazanır ve %8 az hasar alır",
+      "description_en": "Gains +7% health and takes 8% reduced damage",
       "summary": "Hasar azaltma ve can",
       "craftsFrom": [
         "chain-vest",
@@ -95,6 +100,7 @@
         "Tank"
       ],
       "description": "Round başı canının %25'i kalkana dönüşür. Bir süre sonra kalkan da AP'ye dönüşür",
+      "description_en": "At round start, converts 25% of health to shield. After a while, shield converts to AP",
       "summary": "Kalkan ve sonrasında AP verir",
       "craftsFrom": [
         "chain-vest",
@@ -111,6 +117,7 @@
         "Nişancı"
       ],
       "description": "AD artışı",
+      "description_en": "AD increase",
       "summary": "Yüksek saldırı gücü",
       "craftsFrom": [
         "bf-sword",
@@ -128,6 +135,7 @@
         "Tank"
       ],
       "description": "%9 can kazan ve 2 saniyede canının %2.5'ini yenile",
+      "description_en": "Gain +9% health and regenerate 2.5% of health every 2 seconds",
       "summary": "Can yenileme ve büyü direnci",
       "craftsFrom": [
         "negatron-cloak",
@@ -144,6 +152,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "%60 cana düştüğünde hedef alınamaz hale gelirsin",
+      "description_en": "Become untargetable when health drops to 60%",
       "summary": "Düşük canda görünmezlik",
       "craftsFrom": [
         "bf-sword",
@@ -161,6 +170,7 @@
         "Tank"
       ],
       "description": "Rakipleri savunmasız hale getirip büyü direnci ve zırh kazanır",
+      "description_en": "Makes enemies vulnerable and gains magic resist and armor",
       "summary": "Zırh kırma ve dayanıklılık",
       "craftsFrom": [
         "giants-belt",
@@ -178,6 +188,7 @@
         "Tank"
       ],
       "description": "10'ar zırh ve büyü direnci",
+      "description_en": "+10 armor and magic resist",
       "summary": "Ekstra zırh ve büyü direnci",
       "craftsFrom": [
         "chain-vest",
@@ -195,6 +206,7 @@
         "~Yakın Dövüşçü"
       ],
       "description": "Atak hızı artırır, stacklenir",
+      "description_en": "Increases attack speed, stacks",
       "summary": "Canı yüksek rakiplere hasar",
       "craftsFrom": [
         "bf-sword",
@@ -211,6 +223,7 @@
         "Nişancı"
       ],
       "description": "Her saniye %7 saldırı hızı kazan",
+      "description_en": "Gain +7% attack speed every second",
       "summary": "Sınırsız saldırı hızı biriktirme",
       "craftsFrom": [
         "recurve-bow",
@@ -228,6 +241,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "%15 AD ve AP, %12 omnivamp",
+      "description_en": "+15% AD and AP, +12% omnivamp",
       "summary": "Hem hasar hem iyileşme",
       "craftsFrom": [
         "sparring-gloves",
@@ -244,6 +258,7 @@
         "Nişancı"
       ],
       "description": "Vurduğun hasarın %20 miktarı kadar canı en düşük takım arkadaşını heallar",
+      "description_en": "Heals lowest health ally for 20% of damage dealt",
       "summary": "Takım arkadaşını iyileştirir",
       "craftsFrom": [
         "bf-sword",
@@ -260,6 +275,7 @@
         "Nişancı"
       ],
       "description": "Kritik vuruş",
+      "description_en": "Critical strike",
       "summary": "Güçlü kritik hasar",
       "craftsFrom": [
         "bf-sword",
@@ -277,6 +293,7 @@
         "Tank"
       ],
       "description": "Rakibin büyü direncini azaltır",
+      "description_en": "Reduces enemy magic resistance",
       "summary": "Büyü direnci kırma ve hasar",
       "craftsFrom": [
         "needlessly-large-rod",
@@ -294,6 +311,7 @@
         "~Yakın Dövüşçü"
       ],
       "description": "Kritik vuruş",
+      "description_en": "Critical strike",
       "summary": "Yeteneklerin kritik vurmasını sağlar",
       "craftsFrom": [
         "needlessly-large-rod",
@@ -310,6 +328,7 @@
         "Nişancı"
       ],
       "description": "Stacklenen AD artışı. 15 stack olunca saldırı hızı kazan",
+      "description_en": "Stacking AD increase. Gain attack speed at 15 stacks",
       "summary": "Biriken saldırı gücü",
       "craftsFrom": [
         "negatron-cloak",
@@ -326,6 +345,7 @@
         "Nişancı"
       ],
       "description": "Verilen hasarın %30'u kadar rakibin büyü direncini düşürür",
+      "description_en": "Reduces enemy magic resist by 30% of damage dealt",
       "summary": "Direnç kırma",
       "craftsFrom": [
         "recurve-bow",
@@ -343,6 +363,7 @@
         "~Yakın Dövüşçü"
       ],
       "description": "AP yakma",
+      "description_en": "AP burn",
       "summary": "Zamanla hasar ve iyileştirme azaltma",
       "craftsFrom": [
         "needlessly-large-rod",
@@ -360,6 +381,7 @@
         "~Yakın Dövüşçü"
       ],
       "description": "+2 mana, kritik vurursa da +4 mana",
+      "description_en": "+2 mana, +4 mana on critical hit",
       "summary": "Saldırı hızı ve mana",
       "craftsFrom": [
         "giants-belt",
@@ -377,6 +399,7 @@
         "Tank"
       ],
       "description": "Mana, zırh ve max can artar",
+      "description_en": "Increases mana, armor and max health",
       "summary": "Başlangıç manası ve kalkan",
       "craftsFrom": [
         "tear-of-the-goddess",
@@ -393,6 +416,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Kitle kontrolü kazanır ve can yeniler",
+      "description_en": "Gains crowd control immunity and regenerates health",
       "summary": "Kitle kontrol bağışıklığı",
       "craftsFrom": [
         "negatron-cloak",
@@ -410,6 +434,7 @@
         "~Yakın Dövüşçü"
       ],
       "description": "AP artışı",
+      "description_en": "AP increase",
       "summary": "Çok yüksek yetenek gücü",
       "craftsFrom": [
         "needlessly-large-rod",
@@ -426,6 +451,7 @@
         "Nişancı"
       ],
       "description": "AD yakma",
+      "description_en": "AD burn",
       "summary": "Hasar artışı ve yakma",
       "craftsFrom": [
         "recurve-bow",
@@ -442,6 +468,7 @@
         "Nişancı"
       ],
       "description": "Daha hızlı mana doldurur",
+      "description_en": "Fills mana faster",
       "summary": "Saldırılarda ekstra mana",
       "craftsFrom": [
         "tear-of-the-goddess",
@@ -459,6 +486,7 @@
         "Tank"
       ],
       "description": "Can yenileme",
+      "description_en": "Health regeneration",
       "summary": "Artırılmış iyileştirme",
       "craftsFrom": [
         "tear-of-the-goddess",
@@ -476,6 +504,7 @@
         "Tank"
       ],
       "description": "Dayanıklılık kazanır",
+      "description_en": "Gains durability",
       "summary": "Hasar azaltma",
       "craftsFrom": [
         "chain-vest",
@@ -492,6 +521,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Canı %60 değerine düştüğünde %50 kalkan kazanır. Kalkan 5 saniye içinde hızla azalarak kaybolur.",
+      "description_en": "When health drops to 60%, gains a 50% shield. Shield rapidly decays over 5 seconds.",
       "summary": "Patlama hasarına karşı kalkan",
       "craftsFrom": [
         "bf-sword",
@@ -508,6 +538,7 @@
         "Nişancı"
       ],
       "description": "Stackli kritik",
+      "description_en": "Stacking critical strike",
       "summary": "Kritik vuruş odaklı",
       "craftsFrom": [
         "giants-belt",
@@ -525,6 +556,7 @@
         "Tank"
       ],
       "description": "Tanklar için yakma",
+      "description_en": "Burn for tanks",
       "summary": "Yakındaki rakipleri yakar",
       "craftsFrom": [
         "chain-vest",
@@ -544,6 +576,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "+1 team size",
+      "description_en": "+1 team size",
       "summary": "Takım boyutunu artırır",
       "craftsFrom": [
         "spatula",
@@ -563,6 +596,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "+1 team size",
+      "description_en": "+1 team size",
       "summary": "Takım boyutunu artırır",
       "craftsFrom": [
         "spatula",
@@ -582,6 +616,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "+1 team size",
+      "description_en": "+1 team size",
       "summary": "Takım boyutunu artırır",
       "craftsFrom": [
         "frying-pan",
@@ -601,6 +636,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Random 2 eşya verir",
+      "description_en": "Grants 2 random items",
       "summary": "Rastgele eşyalar sağlar",
       "craftsFrom": [
         "sparring-gloves",
@@ -617,6 +653,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Tanklık ve saldırı hızı verir",
+      "description_en": "Grants tankiness and attack speed",
       "summary": "Hasar aldıkça güçlenir",
       "craftsFrom": [
         "recurve-bow",
@@ -633,6 +670,7 @@
         "Nişancı"
       ],
       "description": "Tankların aldığı büyü direncini kırar",
+      "description_en": "Breaks tank magic resistance",
       "summary": "Büyü nüfuzu",
       "craftsFrom": [
         "recurve-bow",
@@ -650,6 +688,7 @@
         "Tank"
       ],
       "description": "%12 max can",
+      "description_en": "+12% max health",
       "summary": "Yüksek can değeri",
       "craftsFrom": [
         "giants-belt",

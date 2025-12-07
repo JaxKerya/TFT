@@ -5,13 +5,14 @@ import Image from 'next/image';
 import { Item } from '@/types/item';
 import { getItemById } from '@/lib/items';
 import { ArrowDown } from 'lucide-react';
-import { locale } from '@/locales';
+import { useLanguage } from '@/lib/language-context';
 
 interface CraftDiagramProps {
   item: Item;
 }
 
 export default function CraftDiagram({ item }: CraftDiagramProps) {
+  const { locale } = useLanguage();
   // Only show for full items with crafting recipe
   if (item.type !== 'full' || !item.craftsFrom || item.craftsFrom.length === 0) {
     return null;

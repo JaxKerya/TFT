@@ -6,7 +6,8 @@ import { X } from 'lucide-react';
 import { Item } from '@/types/item';
 import CraftDiagram from './CraftDiagram';
 import { useEffect } from 'react';
-import { locale } from '@/locales';
+import { useLanguage } from '@/lib/language-context';
+import { translateRole } from '@/lib/role-translations';
 
 interface ItemModalProps {
   item: Item | null;
@@ -14,13 +15,18 @@ interface ItemModalProps {
   onClose: () => void;
 }
 
-const getItemTypeLabel = (type: string) => {
-  if (type === 'full') return locale.itemType.full;
-  if (type === 'base') return locale.itemType.base;
-  return locale.itemType.artifact;
-};
-
 export default function ItemModal({ item, isOpen, onClose }: ItemModalProps) {
+  const { locale, language } = useLanguage();
+
+  const getItemTypeLabel = (type: string) => {
+    if (type === 'full') return locale.itemType.full;
+    if (type === 'base') return locale.itemType.base;
+    return locale.itemType.artifact;
+  };
+
+  const getItemDescription = (item: Item) => {
+    return language === 'en' && item.description_en ? item.description_en : item.description;
+  };
   // Close on escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -131,7 +137,7 @@ export default function ItemModal({ item, isOpen, onClose }: ItemModalProps) {
                           key={role}
                           className="px-2.5 py-1 text-xs font-medium bg-zinc-800/50 text-neutral-300 border border-zinc-700/50 rounded-md"
                         >
-                          {role}
+                          {translateRole(role, language)}
                         </span>
                       ))}
                     </motion.div>
@@ -149,7 +155,7 @@ export default function ItemModal({ item, isOpen, onClose }: ItemModalProps) {
                     {locale.modal.effect}
                   </h3>
                   <p className="text-sm text-neutral-300 leading-relaxed bg-zinc-800/30 p-4 rounded-lg border border-zinc-800/50">
-                    {item.description}
+                    {getItemDescription(item)}
                   </p>
                 </motion.div>
 

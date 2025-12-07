@@ -7,9 +7,10 @@ import ItemModal from '@/components/ItemModal';
 import { getBaseItems } from '@/lib/items';
 import { Item } from '@/types/item';
 import { Package } from 'lucide-react';
-import { locale } from '@/locales';
+import { useLanguage } from '@/lib/language-context';
 
 export default function BaseItemsPage() {
+  const { locale } = useLanguage();
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 

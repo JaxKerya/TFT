@@ -3,7 +3,6 @@
 import { forwardRef } from 'react';
 import { Search, X } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { locale } from '@/locales';
 
 interface SearchBarProps {
   value: string;
@@ -12,7 +11,7 @@ interface SearchBarProps {
 }
 
 const SearchBar = forwardRef<HTMLInputElement, SearchBarProps>(
-  ({ value, onChange, placeholder = locale.home.searchPlaceholder }, ref) => {
+  ({ value, onChange, placeholder }, ref) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: -10 }}

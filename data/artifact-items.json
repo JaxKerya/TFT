@@ -9,6 +9,7 @@
         "Nişancı"
       ],
       "description": "Her bir büyü hasarı rakibin büyü direncini 4 azaltır eğer rakibin büyü direnci 0 sa çara 3 mana verir",
+      "description_en": "Each spell damage reduces enemy magic resist by 4. If enemy magic resist is 0, grants unit 3 mana",
       "summary": "Büyü direnci kırar ve mana verir",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/blighting-jewel1.png"
@@ -23,6 +24,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Ateş ettikçe gereken mana sayısı azalır",
+      "description_en": "Required mana decreases with each cast",
       "summary": "Mana bedeli azalır",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/dawncore.png"
@@ -36,6 +38,7 @@
         "Nişancı"
       ],
       "description": "Rakibin maks canının %40'ı kadar büyü hasarıyla patlatır",
+      "description_en": "Explodes for 40% of enemy max health as magic damage",
       "summary": "Yüksek ani hasar",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/deathfire-grasp.png"
@@ -49,6 +52,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Eşyaya sahip birime uygulanan hasarın %50'si geri yansıtılır",
+      "description_en": "Reflects 50% of damage dealt to item holder",
       "summary": "Hasar yansıtma ve dayanıklılık",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/deaths-defiance.png"
@@ -62,6 +66,7 @@
         "Nişancı"
       ],
       "description": "Random düşmanlara ateş eder",
+      "description_en": "Fires at random enemies",
       "summary": "Rastgele hedeflere saldırı",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/fishbones1.png"
@@ -75,6 +80,7 @@
         "Nişancı"
       ],
       "description": "Stacklenen saldırı hızı, AD ve AP",
+      "description_en": "Stacking attack speed, AD and AP",
       "summary": "Saldırı hızı odaklı güçlenme",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/flickerblade.png"
@@ -88,6 +94,7 @@
         "Nişancı"
       ],
       "description": "Bankadaki her gold için (max 30 gold) %1 ekstra saldırı hızı kazandırır ve her saldırının %5 gold düşürme ihtimali vardır",
+      "description_en": "Grants +1% attack speed per gold in bank (max 30 gold) and each attack has 5% chance to drop gold",
       "summary": "Altın kazandırır ve saldırı hızı verir",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/gamblers-blade2.png"
@@ -101,6 +108,7 @@
         "Nişancı"
       ],
       "description": "Eğer rakibin canı %12 canın altındaysa direkt infaz eder ve %33 şansla her kill 1 gold düşürür",
+      "description_en": "If enemy health is below 12%, executes them and has 33% chance to drop 1 gold per kill",
       "summary": "İnfaz ve altın",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/gold-collector.png"
@@ -114,6 +122,7 @@
         "Tank"
       ],
       "description": "Stunladığı düşmana düşmanın kendi canının %30 kadar büyü hasarı verir",
+      "description_en": "Deals magic damage equal to 30% of stunned enemy's health",
       "summary": "Kitle kontrol sonrası hasar",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/horizon-focus1.png"
@@ -128,6 +137,7 @@
         "Tank"
       ],
       "description": "Yanında dizili çar yoksa 600 can ve %20 AD AP kazanır",
+      "description_en": "Gains 600 health and +20% AD AP when no ally is adjacent",
       "summary": "Yalnızken güçlenir",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/hullcrusher.png"
@@ -144,6 +154,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Her şeyden birazcıkcıkcıkcık",
+      "description_en": "A little bit of everything",
       "summary": "Tüm istatistikleri artırır",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/infinity-force.png"
@@ -158,6 +169,7 @@
         "Tank"
       ],
       "description": "Her aldığı hasarda %1 mana kazanır ve canını doldurur",
+      "description_en": "Gains +1% mana and heals with each damage taken",
       "summary": "Hasar aldıkça mana ve can",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/innervating-locket1.png"
@@ -171,6 +183,7 @@
         "Nişancı"
       ],
       "description": "Her yetenek kullanımından sonraki ilk saldırısında rounda bağlı olarak ek AP hasarı verir",
+      "description_en": "First attack after each ability deals bonus AP damage based on round",
       "summary": "Yetenek sonrası güçlendirilmiş saldırı",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/lich-bane1.png"
@@ -185,6 +198,7 @@
         "Tank"
       ],
       "description": "Canı en düşük takım arkadaşına kendi kalkanından verir",
+      "description_en": "Grants shield to lowest health ally",
       "summary": "Takım arkadaşını korur",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/lightshield-crest1.png"
@@ -200,6 +214,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Manayı hızlı doldurur",
+      "description_en": "Quickly fills mana",
       "summary": "Hızlı mana yenileme",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/manazane.png"
@@ -214,6 +229,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Equipleyen çarı küçültür ve hızını artırır. Chille karşı dayanıklılık kazanır",
+      "description_en": "Shrinks equipped unit and increases speed. Gains resistance against chill",
       "summary": "Hız ve dayanıklılık",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/mittens1.png"
@@ -228,6 +244,7 @@
         "Tank"
       ],
       "description": "Hasar aldıkça kalkan ve can verir",
+      "description_en": "Grants shield and health when taking damage",
       "summary": "Hasar aldıkça güçlenen savunma",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/moguls-mail2.png"
@@ -241,6 +258,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "4 hex içindeki en yakın çara dash at ve %60 krit kazan",
+      "description_en": "Dashes to nearest unit within 4 hexes and gains +60% crit",
       "summary": "Rakibe atılma ve kritik",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/prowler's-claw1.png"
@@ -254,6 +272,7 @@
         "Nişancı"
       ],
       "description": "+1 range kazanır ve her kill aldığında range +1 daha artar",
+      "description_en": "Gains +1 range and +1 additional range per kill",
       "summary": "Menzil artışı",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/rapid-firecannon1.png"
@@ -269,6 +288,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Rakipten bir çar ölünce kalkan ve AP artırır",
+      "description_en": "Increases shield and AP when an enemy dies",
       "summary": "Rakip öldükçe güçlenir",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/seeker's-armguard1.png"
@@ -283,6 +303,7 @@
         "Tank"
       ],
       "description": "Üstüne atladığı rakibi stunlar fakat item verilen çarın maks saldırı hızı 0.5'e sabitlenir",
+      "description_en": "Stuns jumped enemy but max attack speed is fixed at 0.5",
       "summary": "Kitle kontrol ve sabit hız",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/silvermere-dawn1.png"
@@ -296,6 +317,7 @@
         "Nişancı"
       ],
       "description": "1 attack range kazan, rakiple arasındaki her hex için %9 hasar amp kazan",
+      "description_en": "Gain +1 attack range, gain +9% damage amp per hex between enemy",
       "summary": "Uzak mesafe hasar artışı",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/snipers_focus.png"
@@ -309,6 +331,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Holderin aynasal yansımasındaki hexe ışınlar 8sn sonra başladığı yere geri döner",
+      "description_en": "Teleports to mirrored hex of holder, returns to start position after 8s",
       "summary": "Rakip arkasına ışınlanma",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/spectral-cutlass1.png"
@@ -322,6 +345,7 @@
         "Nişancı"
       ],
       "description": "3. atak 40+40% ekstra büyü hasarı verir",
+      "description_en": "3rd attack deals 40+40% extra magic damage",
       "summary": "Zincirleme büyü hasarı",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/statikk-shiv.png"
@@ -336,6 +360,7 @@
         "Tank"
       ],
       "description": "Savaşın 22. saniyesinde 2 katı can ve hasar artışı alır",
+      "description_en": "At 22 seconds of combat, gains 2x health and damage increase",
       "summary": "Uzun savaşlarda güç patlaması",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/talisman-of-ascension1.png"
@@ -351,6 +376,7 @@
         "Tank"
       ],
       "description": "Yavaşlar fakat %10 max health kazanır, stunlanmaz ve rakibi yanına çeker",
+      "description_en": "Slows but gains +10% max health, cannot be stunned and pulls enemies closer",
       "summary": "Kitle kontrol bağışıklığı",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/indomitable-gauntlet.png"
@@ -364,6 +390,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Saldırılar itema sahip kişinin %3 canı ve %8 AD hasarı olarak rakibe hasar atıyor",
+      "description_en": "Attacks deal damage equal to 3% of holder's health and 8% AD to enemies",
       "summary": "Can oranlı alan hasarı",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/titanic-hydra.png"
@@ -379,6 +406,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Clone yaratır. Cloneun %70 canı olur ve %10 mana verir",
+      "description_en": "Creates a clone with 70% health and grants +10% mana",
       "summary": "Klon oluşturur",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/tricksters-glass.png"
@@ -392,6 +420,7 @@
         "Tank"
       ],
       "description": "Çarın üstündeki kalkan kırılırsa onun %150'si karşıya AP hasarı verir",
+      "description_en": "If shield breaks, deals 150% of shield value as AP damage",
       "summary": "Kalkan patlaması hasar verir",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/unending-despair1.png"
@@ -406,6 +435,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Bonus büyü hasarı, uygulanan büyü hasarının %35'i can olarak geri gelir",
+      "description_en": "Bonus magic damage, heals for 35% of magic damage dealt",
       "summary": "Büyü hasarı ve iyileşme",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/wits-end1.png"
@@ -421,9 +451,25 @@
         "Yakın Dövüşçü"
       ],
       "description": "%40 canın altına düşünce görünmez oluyor",
+      "description_en": "Becomes invulnerable when health drops below 40%",
       "summary": "Kısa süreli hasar almamazlık",
       "craftsFrom": [],
       "image": "/images/items/artifactitems/zhonyas-paradox.png"
+    },
+    {
+      "id": "suspicious-trench-coat",
+      "name": "Suspicious Trench Coat",
+      "type": "artifact",
+      "roles": [
+        "AD",
+        "AP",
+        "Tank"
+      ],
+      "description": "İki 1 yıldız karakteri üst üste koyarak güçlendirir",
+      "description_en": "Stacks two 1-star champions on top of each other for enhancement",
+      "summary": "Karakter birleştirme",
+      "craftsFrom": [],
+      "image": "/images/items/artifactitems/suspicious-trench-coat1.png"
     }
   ]
 }

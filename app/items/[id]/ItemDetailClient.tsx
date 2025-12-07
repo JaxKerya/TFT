@@ -6,19 +6,26 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Item } from '@/types/item';
 import CraftDiagram from '@/components/CraftDiagram';
-import { locale } from '@/locales';
+import { useLanguage } from '@/lib/language-context';
+import { translateRole } from '@/lib/role-translations';
 
 interface ItemDetailClientProps {
   item: Item;
 }
 
-const getItemTypeLabel = (type: string) => {
-  if (type === 'full') return locale.itemType.full;
-  if (type === 'base') return locale.itemType.base;
-  return locale.itemType.artifact;
-};
-
 export default function ItemDetailClient({ item }: ItemDetailClientProps) {
+  const { locale, language } = useLanguage();
+
+  const getItemTypeLabel = (type: string) => {
+    if (type === 'full') return locale.itemType.full;
+    if (type === 'base') return locale.itemType.base;
+    return locale.itemType.artifact;
+  };
+
+  const getItemDescription = (item: Item) => {
+    return language === 'en' && item.description_en ? item.description_en : item.description;
+  };
+
   return (
     <div className="max-w-3xl mx-auto space-y-6">
       {/* Back Button */}
@@ -79,7 +86,7 @@ export default function ItemDetailClient({ item }: ItemDetailClientProps) {
                     key={role}
                     className="px-2.5 py-1 text-xs font-medium bg-zinc-800/50 text-neutral-300 border border-zinc-700/50 rounded-md"
                   >
-                    {role}
+                    {translateRole(role, language)}
                   </span>
                 ))}
               </div>
@@ -97,7 +104,7 @@ export default function ItemDetailClient({ item }: ItemDetailClientProps) {
       >
         <h2 className="text-lg font-bold text-neutral-100">{locale.itemDetail.effect}</h2>
         <p className="text-sm text-neutral-300 leading-relaxed">
-          {item.description}
+          {getItemDescription(item)}
         </p>
       </motion.div>
 

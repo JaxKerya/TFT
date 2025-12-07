@@ -44,6 +44,14 @@ export const tr = {
     artifact: 'Artifact Item',
   },
 
+  // Item Card
+  itemCard: {
+    fullItem: 'Tam Item',
+    baseItem: 'Temel Item',
+    artifactItem: 'Artifact Item',
+    notCraftable: 'Craftlanamaz',
+  },
+
   // Item Modal
   modal: {
     effect: 'Etki',
@@ -90,7 +98,7 @@ export const tr = {
 
   // Footer
   footer: {
-    builtWith: '🍭 L 🍭 O 🍭 L 🍭 İ 🍭 P 🍭 O 🍭 P 🍭',
+    builtWith: '🍭 L 🍭 O 🍭 L 🍭 I 🍭 P 🍭 O 🍭 P 🍭',
   },
 } as const;
 

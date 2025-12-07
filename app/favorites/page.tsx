@@ -8,10 +8,11 @@ import ItemCard from '@/components/ItemCard';
 import ItemModal from '@/components/ItemModal';
 import { getItemById } from '@/lib/items';
 import { Item } from '@/types/item';
-import { locale } from '@/locales';
+import { useLanguage } from '@/lib/language-context';
 import { useFavorites } from '@/lib/favorites';
 
 export default function FavoritesPage() {
+  const { locale } = useLanguage();
   const { favorites } = useFavorites();
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);

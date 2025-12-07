@@ -8,6 +8,7 @@
         "AD"
       ],
       "description": "Saldırı gücü verir",
+      "description_en": "Grants attack damage",
       "summary": "Saldırı gücü",
       "buildsInto": [
         "deathblade",
@@ -26,6 +27,7 @@
         "Nişancı"
       ],
       "description": "Saldırı hızı verir",
+      "description_en": "Grants attack speed",
       "summary": "Saldırı hızı",
       "buildsInto": [
         "guinsoos-rageblade",
@@ -41,6 +43,7 @@
         "AP"
       ],
       "description": "Yetenek gücü verir",
+      "description_en": "Grants ability power",
       "summary": "Yetenek gücü",
       "buildsInto": [
         "rabadons-deathcap",
@@ -57,6 +60,7 @@
         "Tank"
       ],
       "description": "Mana verir",
+      "description_en": "Grants mana",
       "summary": "Mana",
       "buildsInto": [
         "blue-buff",
@@ -72,6 +76,7 @@
         "Tank"
       ],
       "description": "Zırh verir",
+      "description_en": "Grants armor",
       "summary": "Zırh",
       "buildsInto": [
         "bramble-vest",
@@ -87,6 +92,7 @@
         "Tank"
       ],
       "description": "Büyü direnci verir",
+      "description_en": "Grants magic resistance",
       "summary": "Büyü direnci",
       "buildsInto": [
         "dragons-claw",
@@ -102,6 +108,7 @@
         "Tank"
       ],
       "description": "Can verir",
+      "description_en": "Grants health",
       "summary": "Can",
       "buildsInto": [
         "warmogs-armor",
@@ -120,6 +127,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Kritik vuruş şansı verir",
+      "description_en": "Grants critical strike chance",
       "summary": "Kritik",
       "buildsInto": [
         "jeweled-gauntlet",
@@ -139,6 +147,7 @@
         "Yakın Dövüşçü"
       ],
       "description": "Özel kombinasyonlar için kullanılır",
+      "description_en": "Used for special combinations",
       "summary": "Özel kombinasyonlar",
       "buildsInto": [
         "tacticians-crown",
@@ -156,6 +165,7 @@
         "Tank"
       ],
       "description": "Saldırı gücü ve dayanıklılık verir",
+      "description_en": "Grants attack damage and durability",
       "summary": "Saldırı gücü ve dayanıklılık",
       "buildsInto": [],
       "image": "/images/items/baseitems/FryingPan.png"

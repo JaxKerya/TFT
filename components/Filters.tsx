@@ -3,7 +3,8 @@
 import { ItemType, ItemRole } from '@/types/item';
 import { motion } from 'framer-motion';
 import { Sparkles, Shield, Zap, X, Lollipop } from 'lucide-react';
-import { locale } from '@/locales';
+import { useLanguage } from '@/lib/language-context';
+import { translateRole } from '@/lib/role-translations';
 
 interface FiltersProps {
   selectedType: ItemType | 'all';
@@ -14,13 +15,6 @@ interface FiltersProps {
   onToggleFavorites?: () => void;
   favoritesCount?: number;
 }
-
-const itemTypes: { value: ItemType | 'all'; label: string; icon: any }[] = [
-  { value: 'all', label: locale.filters.typeAll, icon: Sparkles },
-  { value: 'full', label: locale.filters.typeFull, icon: Zap },
-  { value: 'base', label: locale.filters.typeBase, icon: Shield },
-  { value: 'artifact', label: locale.filters.typeArtifact, icon: Sparkles },
-];
 
 const availableRoles: ItemRole[] = [
   'AD',
@@ -40,6 +34,14 @@ export default function Filters({
   onToggleFavorites,
   favoritesCount = 0,
 }: FiltersProps) {
+  const { locale, language } = useLanguage();
+
+  const itemTypes: { value: ItemType | 'all'; label: string; icon: any }[] = [
+    { value: 'all', label: locale.filters.typeAll, icon: Sparkles },
+    { value: 'full', label: locale.filters.typeFull, icon: Zap },
+    { value: 'base', label: locale.filters.typeBase, icon: Shield },
+    { value: 'artifact', label: locale.filters.typeArtifact, icon: Sparkles },
+  ];
   return (
     <motion.div
       initial={{ opacity: 0, y: -10 }}
@@ -99,7 +101,7 @@ export default function Filters({
                     : 'bg-zinc-900/40 text-neutral-500 border border-zinc-800/50 hover:border-zinc-700 hover:text-neutral-400'
                 }`}
               >
-                {role}
+                {translateRole(role, language)}
               </button>
             ))}
           </div>

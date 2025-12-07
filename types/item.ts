@@ -16,6 +16,7 @@ export interface Item {
   type: ItemType;
   roles: ItemRole[];
   description: string;
+  description_en?: string; // English description
   summary?: string; // Short one-line effect summary
   craftsFrom?: string[]; // Array of base item IDs (for full items)
   buildsInto?: string[]; // Array of full item IDs (for base items)

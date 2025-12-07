@@ -1,8 +1,11 @@
+'use client';
+
 import Link from 'next/link';
 import { Home, Search } from 'lucide-react';
-import { locale } from '@/locales';
+import { useLanguage } from '@/lib/language-context';
 
 export default function NotFound() {
+  const { locale } = useLanguage();
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] text-center space-y-6">
       <div className="relative">

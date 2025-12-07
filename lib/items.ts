@@ -59,10 +59,10 @@ export function filterItems(
     filtered = filtered.filter(item => item.type === type);
   }
 
-  // Filter by roles (item must have at least one of the selected roles)
+  // Filter by roles (item must have ALL of the selected roles)
   if (roles.length > 0) {
     filtered = filtered.filter(item =>
-      item.roles.some(role => roles.includes(role))
+      roles.every(role => item.roles.includes(role))
     );
   }
 

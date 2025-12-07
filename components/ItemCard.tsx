@@ -6,6 +6,8 @@ import { Item } from '@/types/item';
 import { getItemById } from '@/lib/items';
 import { Sparkles, Hexagon, Box, Ban } from 'lucide-react';
 import FavoriteButton from './FavoriteButton';
+import { useLanguage } from '@/lib/language-context';
+import { translateRole } from '@/lib/role-translations';
 
 interface ItemCardProps {
   item: Item;
@@ -13,25 +15,27 @@ interface ItemCardProps {
 }
 
 export default function ItemCard({ item, onClick }: ItemCardProps) {
+  const { locale, language } = useLanguage();
+
   const getTypeBadge = () => {
     switch (item.type) {
       case 'full':
         return { 
           Icon: Hexagon, 
           color: 'bg-blue-500/20 text-blue-300 border-blue-400/30',
-          label: 'Tam Item'
+          label: locale.itemCard.fullItem
         };
       case 'artifact':
         return { 
           Icon: Sparkles, 
           color: 'bg-purple-500/20 text-purple-300 border-purple-400/30',
-          label: 'Artifact Item'
+          label: locale.itemCard.artifactItem
         };
       case 'base':
         return { 
           Icon: Box, 
           color: 'bg-amber-500/20 text-amber-300 border-amber-400/30',
-          label: 'Temel Item'
+          label: locale.itemCard.baseItem
         };
       default:
         return { Icon: Box, color: '', label: '' };
@@ -99,7 +103,7 @@ export default function ItemCard({ item, onClick }: ItemCardProps) {
               key={role}
               className="px-2 py-0.5 text-[10px] font-medium bg-accent/10 text-accent-light rounded border border-accent/20 h-fit"
             >
-              {role}
+              {translateRole(role, language)}
             </span>
           ))}
         </div>
@@ -139,7 +143,7 @@ export default function ItemCard({ item, onClick }: ItemCardProps) {
           <div className="flex items-center justify-center gap-1.5 pt-2 mt-1 border-t border-zinc-800/50 w-full">
             <Ban className="w-3 h-3 text-neutral-600" strokeWidth={2} />
             <span className="text-[9px] text-neutral-600 font-medium uppercase tracking-wide">
-              Craftlanamaz
+              {locale.itemCard.notCraftable}
             </span>
           </div>
         )}
