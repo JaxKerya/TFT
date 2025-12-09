@@ -32,6 +32,12 @@ export default function HomePage() {
   };
 
   const handleItemClick = (item: Item) => {
+    // 🍭 Easter Egg: Redirect to URL if it's an easter egg item
+    if (item.isEasterEgg && item.easterEggUrl) {
+      window.open(item.easterEggUrl, '_blank', 'noopener,noreferrer');
+      return;
+    }
+    
     setSelectedItem(item);
     setIsModalOpen(true);
   };

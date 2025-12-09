@@ -3,6 +3,20 @@ import baseItemsData from '@/data/base-items.json';
 import fullItemsData from '@/data/full-items.json';
 import artifactItemsData from '@/data/artifact-items.json';
 
+// 🍭 Easter Egg: Secret Lolipop Item
+const LOLIPOP_EASTER_EGG: Item = {
+  id: 'easter-egg-lolipop',
+  name: "Almira's Lollipop",
+  type: 'artifact',
+  roles: ['AD', 'AP', 'Tank', 'Nişancı', 'Yakın Dövüşçü'],
+  description: '✨ WUHUHUHUUHUHUUHUHUHUHUUHUHUHUHUHU',
+  description_en: '✨ WUHUHUHUUHUHUUHUHUHUHUUHUHUHUHUHU',
+  summary: "Lolipop'un tadına bakmak için tıklayın! 🎉",
+  image: '/images/items/lollipop.png', // Using spatula as placeholder
+  isEasterEgg: true,
+  easterEggUrl: 'https://www.youtube.com/shorts/XjJuAodeR3Y', // Rick Roll or you can change this!
+};
+
 // Tüm itemları birleştir
 const allItemsData = [
   ...baseItemsData.items,
@@ -37,7 +51,13 @@ export function getArtifactItems(): Item[] {
 }
 
 export function searchItems(query: string): Item[] {
-  const lowercaseQuery = query.toLowerCase();
+  const lowercaseQuery = query.toLowerCase().trim();
+  
+  // 🍭 Easter Egg: If user searches exactly "lolipop", return only the secret item
+  if (lowercaseQuery === 'lolipop' || lowercaseQuery === 'lollipop') {
+    return [LOLIPOP_EASTER_EGG];
+  }
+  
   return getAllItems()
     .filter(item => 
       item.name.toLowerCase().includes(lowercaseQuery) ||

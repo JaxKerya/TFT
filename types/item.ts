@@ -21,6 +21,8 @@ export interface Item {
   craftsFrom?: string[]; // Array of base item IDs (for full items)
   buildsInto?: string[]; // Array of full item IDs (for base items)
   image: string; // Path to item icon
+  isEasterEgg?: boolean; // Easter egg flag
+  easterEggUrl?: string; // URL for easter egg items
 }
 
 export interface FilterState {
